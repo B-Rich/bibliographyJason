@@ -1,0 +1,10 @@
+// creates an MAS called auction 
+
+MAS bibliographyJason {
+    
+    infrastructure: Centralised
+
+    agents: ag1; 
+            ag2; 
+            librarian agentArchClass LibrarianGUI;
+}

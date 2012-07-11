@@ -11,30 +11,34 @@ import jason.asSyntax.Literal;
 import javax.swing.*;
 
 /** example of agent architecture's functions overriding */
-public class AuctioneerGUI extends AgArch {
+public class LibrarianGUI extends AgArch {
 
     JTextArea jt;
+    JTextField jf;
     JFrame    f;
-    JButton auction;
+    JButton search;
 
     int auctionId = 0;
 
-    public AuctioneerGUI() {
+    public LibrarianGUI() {
         jt = new JTextArea(10, 30);
-        auction = new JButton("Start new auction");
-        auction.addActionListener(new ActionListener() {
+        jf = new JTextField(10);
+        search = new JButton("Start a new search");
+        search.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                auctionId++;
-                Literal goal = ASSyntax.createLiteral("start_auction", ASSyntax.createNumber(auctionId));
+            	String keyword = jf.getText();
+            	jt.append("Search this keyword: "+keyword);
+                Literal goal = ASSyntax.createLiteral("start_search", ASSyntax.createString(keyword));
                 getTS().getC().addAchvGoal(goal, null);
-                auction.setEnabled(false);
+                search.setEnabled(false);
             }
         });
         
-        f = new JFrame("Auctioneer agent");
+        f = new JFrame("Librarian agent");
         f.getContentPane().setLayout(new BorderLayout());
-        f.getContentPane().add(BorderLayout.CENTER, new JScrollPane(jt));
-        f.getContentPane().add(BorderLayout.SOUTH, auction);
+        f.getContentPane().add(BorderLayout.NORTH, new JScrollPane(jt));
+        f.getContentPane().add(BorderLayout.CENTER, new JScrollPane(jf));
+        f.getContentPane().add(BorderLayout.SOUTH, search);
         f.pack();
         f.setVisible(true);
     }
@@ -42,12 +46,12 @@ public class AuctioneerGUI extends AgArch {
     @Override
     public void act(ActionExec action, List<ActionExec> feedback) {
         if (action.getActionTerm().getFunctor().startsWith("show_winner")) {
-            jt.append("Winner of auction  " + action.getActionTerm().getTerm(0));
-            jt.append(" is " + action.getActionTerm().getTerm(1) + "\n");
-            action.setResult(true);
-            feedback.add(action);
+            //jt.append("Winner of auction  " + action.getActionTerm().getTerm(0));
+            //jt.append(" is " + action.getActionTerm().getTerm(1) + "\n");
+            //action.setResult(true);
+        	//feedback.add(action);
             
-            auction.setEnabled(true); // enable GUI button
+        	//search.setEnabled(true); // enable GUI button
         } else {
             super.act(action,feedback); // send the action to the environment to be performed.
         }
