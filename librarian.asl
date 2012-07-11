@@ -2,33 +2,26 @@
 
 /* beliefs and rules */ 
 
-all_bids_received(N) :- .count(place_bid(N,_),3). 
+all_information_received(N) :- .count(send_information(N, V), 2). 
 
 /* plans */
 
-+!start_auction(N) : true      // this goal is created by the GUI of the agent 
-    <- -+auction(N);
-       -+winner(N, noone, 0);
-       .broadcast(tell, auction(N)).
-
-// receive bid and check for new winner
++!start_search(N) : true      // this goal is created by the GUI of the agent 
+    <- -+search(N);
+       -+count(0, 2);
+       .broadcast(tell, search(N)).
+       
 @pb1[atomic]
-+place_bid(N,V)[source(S)] 
-   :  auction(N) & winner(N,CurWin,CurVl) & V > CurVl
-   <- -winner(N,CurWin,CurVl); 
-      +winner(N,S,V); .print("New winner is ",S, " with value ",V);
-      !check_end(N).
++send_information(N, V)[source(S)] : count(C, T) & C < T-1
+   <- 	.print("send information from ", S);
+   		-count(C, T);
+   		+count(C+1, T).
 
 @pb2[atomic]
-+place_bid(N,_) : true
-   <- !check_end(N).
++send_information(N, V)[source(S)]: count(C, T) & C = T-1 
+   <- 	.print("send information from ", S);
+		!check_end(N).
 
-+!check_end(N) 
-   :  all_bids_received(N) & 
-      winner(N,W,Vl)
-   <- .print("Winner is ",W," with ", Vl);
-      show_winner(N,W); // show it in the GUI
-      .broadcast(tell, winner(W));
-      .abolish(place_bid(N,_)).
-+!check_end(_).
-
++!check_end(N) : all_information_received(N)
+   <- 	.print("Finish");
+      	.abolish(send_information(N,_)).

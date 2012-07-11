@@ -1,10 +1,8 @@
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.List;
 
 import jason.architecture.*;
-import jason.asSemantics.ActionExec;
 import jason.asSyntax.ASSyntax;
 import jason.asSyntax.Literal;
 
@@ -41,20 +39,6 @@ public class LibrarianGUI extends AgArch {
         f.getContentPane().add(BorderLayout.SOUTH, search);
         f.pack();
         f.setVisible(true);
-    }
-
-    @Override
-    public void act(ActionExec action, List<ActionExec> feedback) {
-        if (action.getActionTerm().getFunctor().startsWith("show_winner")) {
-            //jt.append("Winner of auction  " + action.getActionTerm().getTerm(0));
-            //jt.append(" is " + action.getActionTerm().getTerm(1) + "\n");
-            //action.setResult(true);
-        	//feedback.add(action);
-            
-        	//search.setEnabled(true); // enable GUI button
-        } else {
-            super.act(action,feedback); // send the action to the environment to be performed.
-        }
     }
 
     @Override

@@ -4,7 +4,7 @@ MAS bibliographyJason {
     
     infrastructure: Centralised
 
-    agents: ag1; 
-            ag2; 
+    agents: scholar; 
+            dblp; 
             librarian agentArchClass LibrarianGUI;
 }
