@@ -6,9 +6,13 @@ public class Session {
 	private Webkit w;
 	private NodeFactory nf;
 
-	public Session() {
-		w = new Webkit();
+	public Session(String port) {
+		w = new Webkit(port);
 		nf = new NodeFactory(w);
+	}
+	
+	public Session() {
+		this(null);
 	}
 	
 	public void setErrorTolerance(Boolean errorTolerance) throws Exception {

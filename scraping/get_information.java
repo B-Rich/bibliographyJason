@@ -17,29 +17,24 @@ public class get_information extends DefaultInternalAction {
 
 	@Override
     public Object execute(TransitionSystem ts, Unifier un, Term[] args) throws Exception {
-        //String id = ts.getUserAgArch().getAgName().substring(3);
-        //int bid = Integer.parseInt(id) * 10;
-        // args[0] is the unattended luggage Report Number
-        
-		System.out.println("Search information about "+args[1]+" with |"+args[0]+"|");
+		System.out.println("Search information about "+args[1]+" with "+args[0]);
 		
 		String type = ((StringTerm) args[0]).getString();
+		String search_term = ((StringTerm) args[1]).getString();
 		
 		String result = "No match";
 		
 		if(type.equals(SCHOLAR)) {
-			System.out.println("ciao");
-			Session s = new Session();
+			Session s = new Session("50001");
 			ArrayList<String> papers = new ArrayList<String>();
 			String base_url = "http://scholar.google.it";
 			
 			try {
 				s.setErrorTolerance(true);
-				//s.visit("http://localhost/scholar.htm");
 				s.visit(base_url);
 				ArrayList<Node> nodes = s.xpath("//*[@name='q']");
 				Node n = nodes.get(0);
-				n.set("Giuseppe Vizzari");
+				n.set(search_term);
 				n.getForm().submit();
 				
 				int npage = 1;
@@ -52,11 +47,14 @@ public class get_information extends DefaultInternalAction {
 				    for(int i=1; i<divs.size(); i++) {
 				    	Node div = divs.get(i);
 				    	ArrayList<Node> page_papers = div.xpath("./*[@class=\"gs_rt\"]/a");
-				        System.out.println("page_papers: "+page_papers);
-				        
-				        for(Node page_paper : page_papers) {
-				        	papers.add(page_paper.text());
-				        }
+				    	
+				    	if(page_papers != null) {
+					        System.out.println("page_papers: "+page_papers);
+					        
+					        for(Node page_paper : page_papers) {
+					        	papers.add(page_paper.text());
+					        }
+				    	}
 				        
 				        //ArrayList<Node> citedbies = div.xpath("./*[@class=\"gs_fl\"]/a");
 				        //System.out.println("citedbies: "+citedbies);
@@ -84,7 +82,38 @@ public class get_information extends DefaultInternalAction {
 		}
 		
 		if(type.equals(DBLP)) {
-			result = "result from dblp";
+			Session s = new Session("50002");
+			ArrayList<String> papers = new ArrayList<String>();
+			String base_url = "http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/index.html";
+			
+			try {
+				s.setErrorTolerance(true);
+				s.visit(base_url);
+				ArrayList<Node> nodes = s.xpath("//*[@name=\"author\"]");
+				Node n = nodes.get(0);
+				n.set(search_term);
+				n.getForm().submit();
+				
+				
+				ArrayList<Node> trs = s.xpath("//p[1]/table/tbody/tr");
+ 
+			    for(Node tr : trs) {
+			    	ArrayList<Node> tds = tr.xpath("./td");
+			    	
+			    	if(tds != null) {
+			    		String all_title = tds.get(2).text();
+			    		String title = all_title.substring(all_title.indexOf(":")+1);
+			    		title = title.substring(0, title.indexOf("."));
+			    		papers.add(title);
+			    	}
+			    }
+				
+				System.out.println("papers: "+papers);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			
+			result = Utils.join(papers, ",");
 		}
         
         return un.unifies(args[2], new StringTermImpl(result));

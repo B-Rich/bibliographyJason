@@ -33,7 +33,7 @@ public class Webkit {
 			
 			Thread.sleep(2000);
 			
-			socket = new Socket("localhost", Integer.valueOf(default_port).intValue());
+			socket = new Socket("localhost", Integer.valueOf(port).intValue());
 			in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			out = new PrintStream(socket.getOutputStream(), true);
 			System.out.println("initialized");

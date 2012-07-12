@@ -3,6 +3,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map.Entry;
 
 import jason.architecture.*;
 import jason.asSemantics.ActionExec;
@@ -25,6 +26,7 @@ public class LibrarianGUI extends AgArch {
     public LibrarianGUI() {
         jt = new JTextArea(10, 30);
         jf = new JTextField(10);
+        results = new HashMap<String, String>();
         search = new JButton("Start a new search");
         search.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -48,14 +50,27 @@ public class LibrarianGUI extends AgArch {
     @Override
     public void act(ActionExec action, List<ActionExec> feedback) {
         if (action.getActionTerm().getFunctor().startsWith("show_index")) {
-            jt.append("show index  " + action.getActionTerm().getTerm(0)+"\n");
+            jt.append("show index\n");
+            
+            for(Entry<String, String> entry : results.entrySet()) {
+            	jt.append("-------------------------------\n");
+            	jt.append("agent: "+entry.getKey()+"\n");
+            	jt.append("result: "+entry.getValue()+"\n");
+            	jt.append("-------------------------------\n");
+            }
+            
             action.setResult(true);
             feedback.add(action);
             
             search.setEnabled(true); // enable GUI button
         } else if (action.getActionTerm().getFunctor().startsWith("get_index")) {
-        	jt.append("get index  " + action.getActionTerm().getTerm(0)+"\n");
-        	jt.append("get result  " + action.getActionTerm().getTerm(2)+"\n");
+        	String agent = "" + action.getActionTerm().getTerm(0);
+        	String result = "" + action.getActionTerm().getTerm(2);
+        	
+        	jt.append("get index for "+agent+"\n");
+        	
+        	results.put(agent, result);
+        	
         	action.setResult(true);
             feedback.add(action);
         } else {

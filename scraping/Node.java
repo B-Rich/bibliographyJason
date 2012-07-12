@@ -27,6 +27,11 @@ public class Node {
 	
 	public ArrayList<Node> xpath(String xpath) throws Exception {
 		String result = this.get_id_by_xpath(xpath);
+		
+		if(result.equals("")) {
+			return null;
+		}
+		
 		String[] node_ids = result.split(",");
 		
 		ArrayList<Node> nodes = new ArrayList<Node>();  
