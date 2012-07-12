@@ -55,6 +55,7 @@ public class LibrarianGUI extends AgArch {
             search.setEnabled(true); // enable GUI button
         } else if (action.getActionTerm().getFunctor().startsWith("get_index")) {
         	jt.append("get index  " + action.getActionTerm().getTerm(0)+"\n");
+        	jt.append("get result  " + action.getActionTerm().getTerm(2)+"\n");
         	action.setResult(true);
             feedback.add(action);
         } else {
