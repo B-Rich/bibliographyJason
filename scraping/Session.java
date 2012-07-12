@@ -42,7 +42,8 @@ public class Session {
 		
 		try {
 			s.setErrorTolerance(true);
-			s.visit("http://localhost/scholar.htm");
+			//s.visit("http://localhost/scholar.htm");
+			s.visit("http://scholar.google.it");
 			nodes = s.xpath("//*[@name='q']");
 			Node n = nodes.get(0);
 			n.set("Giuseppe Vizzari");
