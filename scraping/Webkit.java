@@ -11,7 +11,6 @@ public class Webkit {
 	private BufferedReader in;
 	private PrintStream out;
 	private Socket socket;
-	private Process process;
 
 	public Webkit(String port) {
 		in = null;
@@ -30,7 +29,7 @@ public class Webkit {
 			
 			System.out.println("command: "+command);
 			
-			process = Runtime.getRuntime().exec(command);
+			Runtime.getRuntime().exec(command);
 			
 			Thread.sleep(2000);
 			
@@ -63,54 +62,43 @@ public class Webkit {
 	
 	public String receiveMessage() throws Exception {
 		System.out.println("receiveMessage");
-		char[] buffer = new char[8192];
-		int characters_read;
+		String result = "";
 		String message = in.readLine();
 		
-		System.out.println("msg: "+(message.equals("")));
+		System.out.println("msg: "+message);
 		
 		if(!message.equals("ok"))
 			throw new Exception("Invalid message");
 		
-		characters_read = in.read(buffer, message.length(), 1);
+		message = in.readLine();
+		System.out.println("message: "+message);
 		
-		String value = String.valueOf(buffer).trim();
-		System.out.println("value: <<"+value+">>");
-		
-		int length = Integer.valueOf(value);
-		
+		int length = Integer.valueOf(message);
 		System.out.println("length: "+length);
 		
-		message = "";
+		/*int length = Integer.valueOf(message.substring(0, 1));
+		System.out.println("length: "+length);
 		
-		if(length==0) {
-			message = in.readLine();
-			System.out.println("msg2: "+(message.equals("")));
-		}
+		if(length > 0) {
+			result += message.substring(1);
+			length -= message.length() - 1;
+			System.out.println("length: "+length);
+			System.out.println("result: "+result);
+		}*/
+		
+		char[] buffer = new char[length];
+		int charread = 0;
 		
 		while(length > 0) {
-			System.out.println("leggo");
-			characters_read = in.read(buffer);
-			System.out.println("characters_read: "+characters_read);
-			message += String.valueOf(buffer).trim();
-			length -= characters_read;
+			System.out.println("read");
+			charread = in.read(buffer, charread, length);
+			length -= charread;
+			result += String.valueOf(buffer).trim();
+			System.out.println("length: "+length);
 		}
 		
-		System.out.println("return: "+message);
+		System.out.println("return: "+result);
 				
-		return message;
-	}
-	
-	public static void main(String args[]) throws Exception {
-		Webkit c = new Webkit();
-		
-		//Set ErrorTolerant
-		c.sendCommand("SetErrorTolerance", "true");
-		
-		// Visit Command
-		// String result = c.sendCommand("Visit", "http://www.google.it");
-		String result = c.sendCommand("Visit", "http://localhost/scholar.htm");
-		
-		System.out.println("result: "+result);
+		return result;
 	}
 }

@@ -14,7 +14,15 @@ public class Node {
 	}
 	
 	public void set(String value) throws Exception {
-		w.sendCommand("set", node_id, value);
+		w.sendCommand("Node", "set", node_id, value);
+	}
+	
+	public String get(String value) throws Exception {
+		return w.sendCommand("Node", "attribute", node_id, value);
+	}
+	
+	public String text() throws Exception {
+		return w.sendCommand("Node", "text", node_id);
 	}
 	
 	public ArrayList<Node> xpath(String xpath) throws Exception {
@@ -31,7 +39,7 @@ public class Node {
 	}
 	
 	public String get_id_by_xpath(String xpath) throws Exception {
-		return w.sendCommand("findWithin", node_id, xpath);
+		return w.sendCommand("Node", "findWithin", node_id, xpath);
 	}
 	
 	public Node getForm() throws Exception {
@@ -41,5 +49,10 @@ public class Node {
 	
 	public void submit() throws Exception {
 		w.sendCommand("Submit", "var node = Capybara.nodes["+node_id+"]; node.submit();");
+	}
+	
+	@Override
+	public String toString() {
+		return "["+node_id+"]";
 	}
 }
