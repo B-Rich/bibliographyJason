@@ -20,13 +20,19 @@ public class LibrarianGUI extends AgArch {
     JFrame    f;
     JButton search;
     HashMap<String, String> results;
-
-    int auctionId = 0;
+    HashMap<String, Double> papers;
+    int numberAgents;
 
     public LibrarianGUI() {
         jt = new JTextArea(10, 30);
         jf = new JTextField(10);
+        
         results = new HashMap<String, String>();
+        papers = new HashMap<String, Double>();
+        numberAgents = 0;
+        
+        jf.setText("Giuseppe Vizzari");
+        
         search = new JButton("Start a new search");
         search.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -59,6 +65,19 @@ public class LibrarianGUI extends AgArch {
             	jt.append("-------------------------------\n");
             }
             
+            int m = papers.size();
+            int n = numberAgents;
+            double k;
+            double pure_index = 0.0;
+            
+            for(Entry<String, Double> entry : papers.entrySet()) {
+            	k = entry.getValue().doubleValue();
+            	jt.append("paper: "+entry.getKey()+", value: "+(k/(m*n))+"\n");
+            	pure_index += (k/(m*n));
+            }
+            
+            jt.append("pure_index: "+pure_index);
+            
             action.setResult(true);
             feedback.add(action);
             
@@ -69,7 +88,20 @@ public class LibrarianGUI extends AgArch {
         	
         	jt.append("get index for "+agent+"\n");
         	
+        	numberAgents += 1;
+        	
         	results.put(agent, result);
+        	
+        	for(String paper : result.split("!!!")) {
+        		paper = paper.trim();
+        		Double value = papers.get(paper);
+        		
+        		if(value == null) {
+        			value = 0.0;
+        		}
+        		
+        		papers.put(paper, value+1.0);
+        	}
         	
         	action.setResult(true);
             feedback.add(action);

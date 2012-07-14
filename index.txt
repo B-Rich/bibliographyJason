@@ -1,0 +1,409 @@
+-------------------------------
+paper:  Simulation of Alternative Self-Organization Models for an Adaptive Environment, value: 0.0012285012285012285
+paper: Rende (CS), value: 0.0012285012285012285
+paper:  May 8, value: 0.0012285012285012285
+paper: Bio-ICT Convergence: Filling the Gap Between Computer Science and Biology, value: 0.0012285012285012285
+paper: An Agent-Based Model for Pedestrian and Group Dynamics Applied in a Real-World Scenario, value: 0.0012285012285012285
+paper: Agent Based Modeling and Simulation: An Informatics Perspective, value: 0.0012285012285012285
+paper: Towards a Model for Archaeological Phases Detection and Interpretation, value: 0.0012285012285012285
+paper: Coupled MMASS: A Formal Model for Non-deterministic Multi-agent Simulations, value: 0.002457002457002457
+paper:  Agent Based Modeling and Simulation: An Informatics Perspective, value: 0.0012285012285012285
+paper: Sessuologia medica. Trattato di psicosessuologia e medicina della sessualit��, value: 0.0012285012285012285
+paper:  Situated Cellular Agents and Immune System Modelling, value: 0.0012285012285012285
+paper: Multi-agent approach to localization problems: The case of Multilayered Multi-Agent Situated System, value: 0.0012285012285012285
+paper: crowds&ped 2009, value: 0.0012285012285012285
+paper: Simulating and Visualizing Crowd Dynamics with Computational Tools based on Situated Cellular Agents, value: 0.0012285012285012285
+paper:  EPIA 2009, value: 0.0012285012285012285
+paper:  Germany, value: 0.002457002457002457
+paper: Probing robustness of cellular automata through variations of asynchronous updating, value: 0.0012285012285012285
+paper:  Cellular Automata - 9th International Conference on Cellular Automata for Research and Industry, value: 0.0012285012285012285
+paper: IAT 2009, value: 0.002457002457002457
+paper: AI* IA 2007: artificial intelligence and human-oriented computing: 10th Congress of the Italian Association for Artificial Intelligence, value: 0.0012285012285012285
+paper: Pedestrian behavior: models, value: 0.0012285012285012285
+paper: Commerce and Trading Technologies, value: 0.0012285012285012285
+paper:  Multi-agent approach to localization problems: The case of Multilayered Multi-Agent Situated System, value: 0.0012285012285012285
+paper: Mariano Rossi's Camillus Fresco in the Borghese Gallery, value: 0.0012285012285012285
+paper: A Framework for Interacting Situated Agents in Virtual Environments, value: 0.0012285012285012285
+paper: Crowd Modeling and Simulation, value: 0.0012285012285012285
+paper: A heterogeneous multi-agent system for adaptive web applications, value: 0.0012285012285012285
+paper:  A System Supporting Users of Cultural Resource Management Semantic Portals, value: 0.0012285012285012285
+paper: Parallel computing technologies: 9th international conference, value: 0.0012285012285012285
+paper:  Editing and Querying Ontologies Through the Web Knowledge-Based Intelligent Information and Engineering ���, value: 0.0012285012285012285
+paper: NavEditOW-A System for Navigating, value: 0.0012285012285012285
+paper: A comparison of recombinant urokinase with vascular surgery as initial treatment for acute arterial occlusion of the legs, value: 0.0012285012285012285
+paper:  A Methodology for Crowd Modelling with Situated Cellular Agents, value: 0.0012285012285012285
+paper:  Greece, value: 0.002457002457002457
+paper:  Artificial Societies in a Community-Based Approach to Ambient Intelligence, value: 0.0012285012285012285
+paper: dagli Oggetti agli Agenti, value: 0.0012285012285012285
+paper: Second International Symposium on Agent Based Modeling and Simulation, value: 0.0012285012285012285
+paper: An Agent Model for Collaborative Ubiquitous-Computing Environments, value: 0.0012285012285012285
+paper: A cellular automata based model for pedestrian and group dynamics: motivations and first experiments, value: 0.0012285012285012285
+paper:  4th-���6th July 2011 University Club University of Calabria, value: 0.0012285012285012285
+paper: Media education in action. A research study in six european countries, value: 0.0012285012285012285
+paper: Building Smart Environments as Agent Workspaces, value: 0.0012285012285012285
+paper:  Case Based Reasoning and Production Process Design: The Case of P-Truck Curing, value: 0.0012285012285012285
+paper:  ACRI 2010, value: 0.002457002457002457
+paper: Special track on Advances in Computer Simulation (ACS), value: 0.0012285012285012285
+paper: An analysis of different types and effects of asynchronicity in cellular automata update schemes, value: 0.0012285012285012285
+paper:  Abstractions and Phases in Multi-Agent Based Simulation, value: 0.0012285012285012285
+paper: Airborne sensor integration and direct orientation of the CASI system, value: 0.0012285012285012285
+paper: Agent Based Modeling and Simulation, value: 0.0012285012285012285
+paper:  ECCBR 2004, value: 0.0012285012285012285
+paper:  October 10-13, value: 0.0012285012285012285
+paper: RULE-BASED SUPPORT FOR INTEGRATED SECURITY SYSTEMS, value: 0.0012285012285012285
+paper: Environments for multi-agent systems: first international workshop, value: 0.0012285012285012285
+paper:  Hakodate, value: 0.0012285012285012285
+paper: Supporting action-at-a-distance in Situated Cellular Agents, value: 0.0012285012285012285
+paper: Environments for Multi-Agent Systems 2004, value: 0.0012285012285012285
+paper: INTELLIGENZA ARTIFICIALE (F9201P088) CFU: 4, value: 0.0012285012285012285
+paper:  Regulation Function of the Environment in Agent-Based Simulation, value: 0.0012285012285012285
+paper:  Dresden, value: 0.0012285012285012285
+paper:  Crete, value: 0.0012285012285012285
+paper:  MAKKSim: Dealing with Pedestrian Groups in MAS-based Crowd Simulation, value: 0.0012285012285012285
+paper: Advances in Case-based Reasoning: 7th European Conference, value: 0.0012285012285012285
+paper: Environments for situated multi-agent systems: Beyond infrastructure, value: 0.0012285012285012285
+paper: Regulation function of the environment in agent-based simulation, value: 0.0012285012285012285
+paper: Special Issue of" Cybernetics and Systems" V. 38 (7): Best of" Agent-Based Modeling and Simulation 2008", value: 0.0012285012285012285
+paper: Multi-agent modeling of the immune system: The situated cellular agents approach, value: 0.0012285012285012285
+paper:  Rapid Prototyping a Semantic Web Application for Cultural Heritage: The Case of MANTIC, value: 0.0012285012285012285
+paper:  Visualization of Discrete Crowd Dynamics in a 3D Environment, value: 0.0012285012285012285
+paper: First steps on asynchronous lattice-gas models with an application to a swarming rule, value: 0.0012285012285012285
+paper:  Toward a platform for Multi-layered Multi-Agent Situated System (MMASS)-based simulations: focusing on field diffusion, value: 0.0012285012285012285
+paper:  September 10 ���, value: 0.0012285012285012285
+paper:  Pedestrian and Crowd Dynamics Simulation: Testing SCA on Paradigmatic Cases of Emerging Coordination in Negative Interaction Conditions, value: 0.0012285012285012285
+paper: An integrated approach to the valorization of cultural heritage, value: 0.0012285012285012285
+paper: Primo modulo: Rappresentazione della conoscenza, value: 0.0012285012285012285
+paper: Cellular automata, value: 0.0012285012285012285
+paper: Development of a game simulation to analyze coalitions in agents, value: 0.0012285012285012285
+paper: A spatially dependent communication model for ubiquitous systems, value: 0.0012285012285012285
+paper: Simulation of alternative self-organization models for an adaptive environment, value: 0.0012285012285012285
+paper:  September 21-24, value: 0.002457002457002457
+paper:  September 21-23, value: 0.0012285012285012285
+paper: Supporting the Design of Self-Organizing Ambient Intelligent Systems Through Agent���Based Simulation, value: 0.0012285012285012285
+paper:  May 30-June 3, value: 0.0012285012285012285
+paper: Environment support to the management of context awareness information, value: 0.0012285012285012285
+paper:  A Multi-Agent System for Remote Psychological Profiling with Role Playing Games Based Tests, value: 0.0012285012285012285
+paper: Situated agents and the Web: Supporting site adaptivity, value: 0.0012285012285012285
+paper: Position Paper Auto-Gerenciamento em um Grid SMA, value: 0.0012285012285012285
+paper: Engineering Environment-Mediated Multi-Agent Systems: International Workshop, value: 0.0012285012285012285
+paper:  The Role of Knowledge Artifacts in Knowledge Maintenance, value: 0.0012285012285012285
+paper:  Towards a Methodology for Situated Cellular Agent Based Crowd Simulations, value: 0.0012285012285012285
+paper:  A Cellular Automata-Based Modular Lighting System, value: 0.0012285012285012285
+paper:  Exploiting Knowledge Based Systems to Support Manufacturing of Functional Food Products, value: 0.0012285012285012285
+paper: DESIGN CREATIVITY, value: 0.0012285012285012285
+paper: Models, value: 0.002457002457002457
+paper:  le presentazioni, value: 0.0012285012285012285
+paper:  Environments for Situated Multi-agent Systems: Beyond Infrastructure, value: 0.0012285012285012285
+paper: A virtual e-retailing environment in golem, value: 0.0012285012285012285
+paper:  Experimenting Situated Cellular Agents in Indoor Scenario: Pedestrian Dynamics during Lecture Hall Evacuation, value: 0.0012285012285012285
+paper:  le tavole rotonde, value: 0.0012285012285012285
+paper:  October 5, value: 0.0012285012285012285
+paper: Modelling the immune system with situated agents, value: 0.0012285012285012285
+paper: A system supporting users of cultural resource management semantic portals, value: 0.0012285012285012285
+paper: GUEST EDITORIAL: BEST OF ���AGENT-BASED MODELING AND SIMULATION 2008���(ABMODSIM-2), value: 0.0012285012285012285
+paper: Reference Architecture and Framework, value: 0.0012285012285012285
+paper: The AgentLink III Technical Forums: Introduction to the Special Issue, value: 0.0012285012285012285
+paper: Towards a general framework for substitutional adaptation in case-based reasoning, value: 0.0012285012285012285
+paper: Smart Environments as Agent Workspaces, value: 0.0012285012285012285
+paper: Progress in Artificial Intelligence: 15th Portuguese Conference on Artificial Intelligence, value: 0.0012285012285012285
+paper: Awareness in collaborative ubiquitous environments: The multilayered multi-agent situated system approach, value: 0.0012285012285012285
+paper: Case-Based Troubleshooting in the Automotive Context: The SMMART Project, value: 0.0012285012285012285
+paper: Ebookfest tracce 2010. I seminari, value: 0.0012285012285012285
+paper:  Campus of Arcavacata, value: 0.0012285012285012285
+paper:  NY, value: 0.0012285012285012285
+paper: Scientific Visit from HajjCoRE to USM���Penang���Malaysia, value: 0.0012285012285012285
+paper: Agent-Based Pedestrian Modeling and Simulation, value: 0.0012285012285012285
+paper:  Santander, value: 0.0012285012285012285
+paper: A CA-Based Approach to Self-Organized Adaptive Environments: The Case of an Illumination Facility, value: 0.0012285012285012285
+paper: Towards a methodology for situated cellular agent based crowd simulations, value: 0.0012285012285012285
+paper: D��as rojos, value: 0.0012285012285012285
+paper:  Palermo, value: 0.0012285012285012285
+paper:  2004; revised selected papers, value: 0.0012285012285012285
+paper:  editing and querying ontologies through the web, value: 0.0012285012285012285
+paper:  opus in varios, value: 0.0012285012285012285
+paper:  Coordinating change of agents' states in situated agents models, value: 0.0012285012285012285
+paper:  June 15-20, value: 0.0012285012285012285
+paper: Conoscere il Roccamonfina, value: 0.0012285012285012285
+paper: The 3 rd International Workshop on Multi-Agent Systems and Simulation (MAS&S): Towards an Integration of Agent-Oriented Software Engineering and ���, value: 0.0012285012285012285
+paper: Coordinated change of state for situated agents, value: 0.0012285012285012285
+paper:  QUALIT�� DELL'AMBIENTE E SALUTE���, value: 0.0012285012285012285
+paper:  A CA-Based Self-Organized Illumination Facility, value: 0.0012285012285012285
+paper:  WWW in the Small, value: 0.0012285012285012285
+paper:  Towards a Model for Ubiquitous and Mobile Computing, value: 0.0012285012285012285
+paper: A multi-agent system for remote psychological profiling with role playing games based tests, value: 0.0012285012285012285
+paper: The following list contains a selection of recent books on music. All prices are net, value: 0.0012285012285012285
+paper: VII Convegno AISSA ���AGRICOLTURA, value: 0.0012285012285012285
+paper: Substitutional adaptation in case-based reasoning: a general framework applied to P-Truck curing, value: 0.0012285012285012285
+paper: Un libro per Haiti, value: 0.0012285012285012285
+paper:  p. 1: The eight-line stanzas placed at the head of each chapter are, value: 0.0012285012285012285
+paper:  E4MAS 2004, value: 0.0012285012285012285
+paper:  E4MAS 2006, value: 0.0012285012285012285
+paper: International symposium on agent based modeling and simulation (ABModSim 2006), value: 0.0012285012285012285
+paper:  Simulation supporting the design of self-organizing ambient intelligent systems, value: 0.0012285012285012285
+paper:  Athens, value: 0.0012285012285012285
+paper: Current Developments and Future Challenges of Coordination in Pervasive Environments, value: 0.0012285012285012285
+paper:  A Framework for Ontological Description of Archaeological Scientific Publications, value: 0.0012285012285012285
+paper: The physiology of love and other writings, value: 0.0012285012285012285
+paper:  Context dependent management of field diffusion: an experimental framework, value: 0.0012285012285012285
+paper: POP LA NUOVA GRANDE CUCINA ITALIANA, value: 0.0012285012285012285
+paper:  Epia 2011, value: 0.0012285012285012285
+paper: A framework for execution and 3D visualization of situated cellular agent based crowd simulations, value: 0.0012285012285012285
+paper:  Self-organization models for adaptive environments: Envisioning and evaluation of alternative approaches, value: 0.0012285012285012285
+paper:  Japan, value: 0.0012285012285012285
+paper:  Situated Agents and the Web: Supporting Site Adaptivity, value: 0.0012285012285012285
+paper: Multi-agent systems as discrete dynamical systems: influences and reactions as a modelling principle, value: 0.0012285012285012285
+paper:  2004: Proceedings, value: 0.0012285012285012285
+paper: Situated cellular agents: A model to simulate crowding dynamics, value: 0.0012285012285012285
+paper:  2007; proceedings, value: 0.0012285012285012285
+paper: A hybrid agent architecture for situated agents based virtual environments, value: 0.0012285012285012285
+paper: A CA-Based Self-organizing Environment: A Configurable Adaptive Illumination Facility, value: 0.0012285012285012285
+paper:  Towards an Agent-Based Proxemic Model for Pedestrian and Group Dynamic, value: 0.0012285012285012285
+paper:  Modeling dynamic environments in multi-agent simulation, value: 0.0012285012285012285
+paper: Towards a Coordination Framework for Pervasive Environments., value: 0.0012285012285012285
+paper:  Substitutional Adaptation in Case-Based Reasoning: A General Framework Applied to P-Truck Curing, value: 0.0012285012285012285
+paper: Toward a platform for multi-layered multi-agent situated system (MMASS)-based simulations: focusing on field diffusion, value: 0.0012285012285012285
+paper: AI/AI 2011: Artificial Intelligence Around Man and Beyond: XIIth International Conference of the Italian Association for Artificial Intelligence, value: 0.0012285012285012285
+paper:  June 20-23, value: 0.0012285012285012285
+paper:  Environment Support to the Management of Context Awareness Information, value: 0.0012285012285012285
+paper: Modelling, value: 0.0012285012285012285
+paper: Experimenting Situated Cellular Agents in Indoor Scenario: Pedestrian Dynamics during Lecture Hall Evacuation, value: 0.0012285012285012285
+paper:  Lisbon, value: 0.0012285012285012285
+paper:  2005; ���, value: 0.0012285012285012285
+paper: Recent advances in design and decision support systems in architecture and urban planning, value: 0.0012285012285012285
+paper: Laboratori del SECONDO ANNO, value: 0.0012285012285012285
+paper:  July 19, value: 0.0012285012285012285
+paper: Romolo Ferrari e la chitarra in Italia nella prima met�� del Novecento, value: 0.0012285012285012285
+paper:  A Cellular Automata Based Model for Pedestrian and Group Dynamics: Motivations and First Experiments, value: 0.0012285012285012285
+paper:  Models, value: 0.0012285012285012285
+paper:  Coordinated Change of State for Situated Agents, value: 0.0012285012285012285
+paper: Modelling proximal space in urban cellular automata, value: 0.0012285012285012285
+paper:  Combining Interface Agents and Situated Agents for Deploying Adaptive Web Applications, value: 0.0012285012285012285
+paper: Coordinating change of agents' states in situated agents models, value: 0.0012285012285012285
+paper: CA-based self-organizing environments, value: 0.0012285012285012285
+paper: Integrated Spatial Assessment (ISA): A Multi-Methodological Approach for Planning Choices, value: 0.0012285012285012285
+paper: Combining Interface agents and Situated agents for deploying Adaptive Web applications, value: 0.0012285012285012285
+paper:  Simulating and Visualizing Complex Dynamics with SCA platform, value: 0.0012285012285012285
+paper:  Integrating a Wiki in an Ontology Driven Web Site: Approach, value: 0.0012285012285012285
+paper: 1. negotiated relations Epigraph, value: 0.0012285012285012285
+paper: Cellular Automata: 9th International Conference on Cellular Automata for Research and Industry, value: 0.0012285012285012285
+paper:  September 5-9, value: 0.0012285012285012285
+paper:  Fapesp Project 2004/14107-2 Logical Consequence and Combinations of Logics���Fundaments and Efficient Applications, value: 0.0012285012285012285
+paper:  abstractions and phases in multi-agent based simulation, value: 0.002457002457002457
+paper: Fauna Etvetica, value: 0.0012285012285012285
+paper: primary sources Albizzi, value: 0.0012285012285012285
+paper: Introducing Girolamo Pesci, value: 0.0012285012285012285
+paper: An Ontology Driven Web Site and its Application in the Archaeological Context, value: 0.0012285012285012285
+paper: Gradient Field Based Order Assignment in AGV Systems, value: 0.0012285012285012285
+paper: La scelta del corpo e la costruzione dell'identit��. Una lettura etnografica di esperienze della transizione di genere, value: 0.0012285012285012285
+paper: GUEST EDITORIAL: BEST OF ���AGENT BASED MODELLING AND SIMULATION 2010���(ABModSim-3), value: 0.0012285012285012285
+paper:  Multi-agent modeling of the immune system: The situated cellular agents approach, value: 0.0012285012285012285
+paper:  Heraklion, value: 0.0012285012285012285
+paper: Dipartimento di Informatica e Scienze dell'Informazione, value: 0.0012285012285012285
+paper:  A Spatially Dependent Communication Model for Ubiquitous Systems, value: 0.0012285012285012285
+paper:  e Arciprete della Patriarcale Basilica di S. Maria ���, value: 0.0012285012285012285
+paper: WI'09 and IAT'09 Conference Organization, value: 0.0012285012285012285
+paper: An integral approach to Agents, value: 0.0012285012285012285
+paper:  Guest Editorial: Best of "Agent-Based Modeling and Simulation 2008" (Abmodsim-2), value: 0.0012285012285012285
+paper:  Guest Editorial: Best OF "Agent Based Modelling and Simulation 2010" (ABModSim-3), value: 0.0012285012285012285
+paper:  Rome, value: 0.0012285012285012285
+paper: PASSIONE STORICA E STORIA CIVICA NELLA CALABRIA NORD���OCCIDENTALE. RASSEGNA BIBLIOGRAFICA E RIFLESSIONI STORIOGRAFICHE, value: 0.0012285012285012285
+paper: Le memorie del vecchio maresciallo, value: 0.0012285012285012285
+paper:  Selected Revised ���, value: 0.0012285012285012285
+paper:  Situated Agents Interaction: Coordinated Change of State for Adjacent Agents, value: 0.0012285012285012285
+paper: Logic and the simulation of interaction and reasoning: Introductory remarks, value: 0.0012285012285012285
+paper: Marketing e comunicazione non profit, value: 0.0012285012285012285
+paper:  Valencia, value: 0.0012285012285012285
+paper: The Semantic Web: Research and Applications: 7th Extended Semantic Web Conference, value: 0.0012285012285012285
+paper:  2005: proceedings, value: 0.002457002457002457
+paper:  The Netherlands, value: 0.0012285012285012285
+paper:  Editing and Querying Ontologies Through the Web, value: 0.0012285012285012285
+paper: Enabling Creativity through Innovation Challenges: The Case of Interactive Lightning, value: 0.0012285012285012285
+paper:  A Framework for Execution and Visualization of Situated Agents Based Virtual Environments, value: 0.0012285012285012285
+paper: Situated cellular agents approach to crowd modeling and simulation, value: 0.0012285012285012285
+paper: The role of knowledge artifacts in knowledge maintenance, value: 0.0012285012285012285
+paper:  2010, value: 0.0036855036855036856
+paper: A Software infrastructure for multi-agent geosimulation applications, value: 0.0012285012285012285
+paper: Towards an agent-based proxemic model for pedestrian and group dynamic, value: 0.0012285012285012285
+paper:  2011, value: 0.0012285012285012285
+paper: Guest editorial preface: Software and system engineering: an ontological perspective, value: 0.0012285012285012285
+paper: Analisi e Progettazione di Pratiche Didattiche in Media Education. Una ricerca su sei paesi europei, value: 0.0012285012285012285
+paper:  Heidelberg, value: 0.0012285012285012285
+paper: Modeling and programming asynchronous automata networks: The MOCA approach, value: 0.0012285012285012285
+paper: A framework for execution and visualization of situated agents based virtual environments, value: 0.0012285012285012285
+paper: Web Intelligence and Intelligent Agent Technology. Proceedings of the 2009 IEEE/WIC/ACM International Conference on Web Intelligence, value: 0.0012285012285012285
+paper:  1991, value: 0.0012285012285012285
+paper: Un modelo abierto de proximidad para el descubrimiento de servicios en computaci��n pervasiva, value: 0.0012285012285012285
+paper: I santolilli: culti dell'infanzia e santit�� infantile a Napoli alla fine del XVII secolo, value: 0.0012285012285012285
+paper: Ausarbeitung Anwendungen 2-SoSe 2011, value: 0.0012285012285012285
+paper:  Situated Cellular Agents Approach to Crowd Modeling and Simulation, value: 0.0012285012285012285
+paper: Supporting action-at-a-distance in situated cellular agents, value: 0.0012285012285012285
+paper: Space in Multi-agent Systems, value: 0.0012285012285012285
+paper: Immune System Modelling with Situated Cellular Agents, value: 0.0012285012285012285
+paper:  2007, value: 0.0012285012285012285
+paper: SMART ENVIRONMENTS AS AGENTS WORKSPACES, value: 0.0012285012285012285
+paper: Indirect interaction in environments for multi-agent systems, value: 0.0012285012285012285
+paper:  BASYS 2010, value: 0.0012285012285012285
+paper:  2009, value: 0.002457002457002457
+paper: Notizie per l��nno 1808. dedicate all?... Cardinale Antonio Despuig y Dameto del titolo di S. Calisto, value: 0.0012285012285012285
+paper:  rendering and analysis of collective reactions in social interaction environments, value: 0.0012285012285012285
+paper: Bracing for disaster: earthquake-resistant architecture and engineering in San Francisco, value: 0.0012285012285012285
+paper:  Aveiro, value: 0.0012285012285012285
+paper: MILANO, value: 0.0012285012285012285
+paper: WET ICE 2007 Participants, value: 0.0012285012285012285
+paper: An agent model of pedestrian and group dynamics: experiments on group cohesion, value: 0.0012285012285012285
+paper:  Towards Hybrid Situated Agents Based Virtual Environments, value: 0.0012285012285012285
+paper: Mathematical Theory and Computational Practice: 5th Conference on Computability in Europe, value: 0.0012285012285012285
+paper: Web sites as agents' environments: General framework and applications, value: 0.0012285012285012285
+paper: Case based reasoning and production process design: the case of P-truck curing, value: 0.0012285012285012285
+paper:  NavEditOW - A System for Navigating, value: 0.0012285012285012285
+paper: A Framework for Simulated Crowd Behavior in Virtual Environments, value: 0.0012285012285012285
+paper:  A CA-Based Approach to Self-Organized Adaptive Environments: The Case of an Illumination Facility, value: 0.0012285012285012285
+paper:  Milan, value: 0.0012285012285012285
+paper:  Ascoli Piceno, value: 0.002457002457002457
+paper:  ���, value: 0.004914004914004914
+paper:  servizi e forniture: commentario sistematico, value: 0.0012285012285012285
+paper: A methodology for crowd modelling with situated cellular agents, value: 0.0012285012285012285
+paper:  Russia, value: 0.002457002457002457
+paper: A passo d'uomo, value: 0.0012285012285012285
+paper: Simulation of Alternative Self-Organization Models for an Adaptive Environment, value: 0.0012285012285012285
+paper: A Multi-Agent Geosimulation Infrastructure for Planning, value: 0.0012285012285012285
+paper: Design Computing and Cognition'10, value: 0.0012285012285012285
+paper: "Modeling dynamic environments in multi-agent simulation, value: 0.0012285012285012285
+paper: A framework for ontological description of archaeological scientific publications, value: 0.0012285012285012285
+paper: An Agent Model for Collaborative Ubiquitous Environments, value: 0.0012285012285012285
+paper: Multi-agent systems and simulation: a survey from an application perspective, value: 0.0012285012285012285
+paper: Integrating a Wiki in an Ontology Driven Web Site: Approach, value: 0.0012285012285012285
+paper: Simulation supporting the design of self-organizing ambient intelligent systems, value: 0.0012285012285012285
+paper: WI-IAT Workshops 2009, value: 0.0012285012285012285
+paper: L'ANZIANO E LA COMUNICAZIONE, value: 0.0012285012285012285
+paper:  verano negro", value: 0.0012285012285012285
+paper:  Krasnoyarsk, value: 0.0012285012285012285
+paper: A general-purpose geosimulation infrastructure for spatial decision support, value: 0.0012285012285012285
+paper: Les fonds d'archives eccl��siastiques en Italie m��ridionale, value: 0.0012285012285012285
+paper: Progress Report 01 ConsRel, value: 0.0012285012285012285
+paper: Self-organization models for adaptive environments: Envisioning and evaluation of alternative approaches, value: 0.0012285012285012285
+paper: The 4 rd International Workshop on Multi-Agent Systems and Simulation (MAS&S): Engineering Complex Systems through Agent-Based Modeling and ���, value: 0.0012285012285012285
+paper: Situated cellular agents for crowd simulation and visualization, value: 0.0012285012285012285
+paper:  University of Vienna, value: 0.0012285012285012285
+paper:  August 30-September 2, value: 0.0012285012285012285
+paper: An Agent-Based Approach to Pedestrian and Group Dynamics: Experimental and Real World Scenarios, value: 0.0012285012285012285
+paper: Le associazioni sacerdotali. Per una tipologia delle associazioni italiane dal Medioevo a oggi, value: 0.0012285012285012285
+paper: CoMA Workshop Final Report, value: 0.0012285012285012285
+paper: A Cellular Automata Model for Pedestrian and Group Dynamics, value: 0.0012285012285012285
+paper: A fuzzy NL interface for dialogue-based information retrieval, value: 0.0012285012285012285
+paper:  Madrid, value: 0.0012285012285012285
+paper:  2008: proceedings, value: 0.0012285012285012285
+paper: A Perception Oriented MAS Model with Hybrid Commonsense Spatial Reasoning, value: 0.0012285012285012285
+paper:  Francesco. De inconstantia in iure admittenda vel non, value: 0.0012285012285012285
+paper: Modellazione e simulazione di folle: l'approccio degli agenti cellulari situati, value: 0.0012285012285012285
+paper:  Towards a General Framework for Substitutional Adaptation in Case-Based Reasoning, value: 0.0012285012285012285
+paper:  RPG-Profiler: a MAS for Role Playing Games Based Tests in Employee Assessment", value: 0.0012285012285012285
+paper: " An analysis of different types and effects of asynchronicity in cellular automata update schemes, value: 0.0012285012285012285
+paper: MMASS approach to localization problems, value: 0.0012285012285012285
+paper: Tecnologie della mobilita e servizi consapevoli del contesto, value: 0.0012285012285012285
+paper:  A framework for execution and 3D visualization of situated cellular agent based crowd simulations, value: 0.0012285012285012285
+paper:  What Do We Mean by Asynchronous CA? A Reflection on Types and Effects of Asynchronicity, value: 0.0012285012285012285
+paper:  CA-based self-organizing environments - The case of a configurable adaptive illumination facility, value: 0.0012285012285012285
+paper:  Situated Cellular Agents: A Model to Simulate Crowding Dynamics, value: 0.0012285012285012285
+paper:  An Agent-Based Proxemic Model for Pedestrian and Group Dynamics: Motivations and First Experiments, value: 0.0012285012285012285
+paper: Multi-channel Adaptive Information Systems, value: 0.0012285012285012285
+paper: Service-oriented computing: ICSOC 2005: third international conference, value: 0.0012285012285012285
+paper:  Web Sites as Agents' Environments: General Framework and Applications, value: 0.0012285012285012285
+paper: Balanced Automation Systems for Future Manufacturing Networks: 9th IFIP WG 5.5 International Conference, value: 0.0012285012285012285
+paper: Sizilien: Im Bann des ��tnas, value: 0.0012285012285012285
+paper:  A Framework for Interacting Situated Agents in Virtual Environments, value: 0.0012285012285012285
+paper: Means of expression, value: 0.0012285012285012285
+paper:  and in the case of foreign books the figure quoted is that at which the cheapest copy ���, value: 0.0012285012285012285
+paper: Computational Science and Its Applications-ICCSA 2011: International Conference, value: 0.0012285012285012285
+paper:  A Cellular Automata Model for Pedestrian and Group Dynamics, value: 0.0012285012285012285
+paper: Agent based modeling and simulation: an informatics perspective, value: 0.0012285012285012285
+paper: Situated cellular agents and immune system modelling, value: 0.0012285012285012285
+paper: An Agent-Based Model for Pedestrian and Group Dynamics: Experimental and Real-World Scenarios, value: 0.0012285012285012285
+paper:  An Asynchronous Cellular Automata-Based Adaptive Illumination Facility, value: 0.0012285012285012285
+paper:  Modelling the Immune System with Situated Agents, value: 0.0012285012285012285
+paper:  An Agent Model of Pedestrian and Group Dynamics: Experiments on Group Cohesion, value: 0.0012285012285012285
+paper:  July 21-23, value: 0.0012285012285012285
+paper: Il nuovo codice dei contratti pubblici di lavori, value: 0.0012285012285012285
+paper:  Semantic Querying For An Archeological E-Library, value: 0.0012285012285012285
+paper:  Awareness in collaborative ubiquitous environments: The Multilayered Multi-Agent Situated System approach, value: 0.0012285012285012285
+paper:  Building Smart Environments as Agent Workspaces, value: 0.0012285012285012285
+paper: AI* IA 2005: advances in artificial intelligence: 9th Congress of the Italian Association for Artificial Intelligence, value: 0.0012285012285012285
+paper: Makksim: Dealing with pedestrian groups in mas-based crowd simulation, value: 0.0012285012285012285
+paper:  Italy, value: 0.006142506142506142
+paper: Progettazione e realizzazione di un'architettura per applicazioni Web basata sul modello MMASS: un esempio applicativo per il monitoraggio di siti e visitatori., value: 0.0012285012285012285
+paper: Logic and theory of algorithms: 4th Conference on Computability in Europe, value: 0.0012285012285012285
+paper: An Asynchronous Cellular Automata-Based Adaptive Illumination Facility, value: 0.0012285012285012285
+paper: Towards an agent-based proxemic model for pedestrian and group dynamics: motivations and first experiments, value: 0.0012285012285012285
+paper:  2011. Proceedings, value: 0.0012285012285012285
+paper: Towards a model for ubiquitous and mobile computing, value: 0.0012285012285012285
+paper:  Modelling the immune system: the case of situated cellular agents, value: 0.0012285012285012285
+paper: Towards hybrid situated agents based virtual environments, value: 0.0012285012285012285
+paper:  Amsterdam, value: 0.0012285012285012285
+paper: Modelling the immune system: the case of situated cellular agents, value: 0.0012285012285012285
+paper: A Framework for Executing and Visualizing Cellular Agent Based Crowd Simulations, value: 0.0012285012285012285
+paper:  2010 ���, value: 0.0012285012285012285
+paper:  Towards an agent-based proxemic model for pedestrian and group dynamics: motivations and first experiments, value: 0.0012285012285012285
+paper: An Agent-Based Proxemic Model for Pedestrian and Group Dynamics: Motivations and First Experiments, value: 0.0012285012285012285
+paper:  Proceedings, value: 0.002457002457002457
+paper: Young Digizen? New cultural challenges in media education, value: 0.0012285012285012285
+paper: Situated agents interaction: Coordinated change of state for adjacent agents, value: 0.0012285012285012285
+paper:  data collection and applications, value: 0.0012285012285012285
+paper: BASILICATA POTENZA POTENZA UNIVERSITA'DEGLI STUDI DELLA BASILICATA/DAPIT, value: 0.0012285012285012285
+paper:  July 19-24, value: 0.0012285012285012285
+paper: Decentralised gathering on a discrete field: coupling reaction-diffusion and chemotaxis as social amoebae do, value: 0.0012285012285012285
+paper: ANZIANI: QUALIT�� DELLA VITA E, value: 0.0012285012285012285
+paper:  Portugal, value: 0.002457002457002457
+paper:  Spain, value: 0.0036855036855036856
+paper: ANALYSIS OF VARIOUS URBAN GROWTH MODELS BASED ON CELLULAR AUTOMATA, value: 0.0012285012285012285
+paper: Sessualita Narrate, value: 0.0012285012285012285
+paper: A CA-Based Self-Organized Illumination Facility, value: 0.0012285012285012285
+paper:  MONDADORI, value: 0.0012285012285012285
+paper:  Guest Editorial: Best of "agent-based Modeling and Simulation" (abmodsim), value: 0.0012285012285012285
+paper: Temporalised epistemic logic for reasoning about agent-based systems| Macquarie University ResearchOnline, value: 0.0012285012285012285
+paper:  Worshops, value: 0.0012285012285012285
+paper:  Pereslavl-Zalessky, value: 0.0012285012285012285
+paper:  1838-1933, value: 0.0012285012285012285
+paper:  CiE 2008, value: 0.0012285012285012285
+paper: Il santo del secolo dei lumi: Alfonso de'Liguori (1696-1787), value: 0.0012285012285012285
+paper:  Architecture and Application in the Archaeological Domain, value: 0.002457002457002457
+paper: INTERGENERAZIONALE, value: 0.0012285012285012285
+paper: A model of multi-agent system based on immune evolution, value: 0.0012285012285012285
+paper: A cellular automata-based modular lighting system, value: 0.0012285012285012285
+paper:  Special track on Advances in Computer Simulation (ACS): editorial message, value: 0.0012285012285012285
+paper:  CiE 2009, value: 0.0012285012285012285
+paper: Parallel computing technologies: 8th international conference, value: 0.0012285012285012285
+paper:  A CA-Based Self-organizing Environment: A Configurable Adaptive Illumination Facility, value: 0.0012285012285012285
+paper:  December 12-15, value: 0.0012285012285012285
+paper: Combating implant infections. Remarks by a women's team, value: 0.0012285012285012285
+paper: Environments for multi-agent systems III: third international workshop, value: 0.0012285012285012285
+paper: Le due zone d'intervento, value: 0.0012285012285012285
+paper: Pedestrian and crowd dynamics simulation: Testing sca on paradigmatic cases of emerging coordination in negative interaction conditions, value: 0.0012285012285012285
+paper: Multi-agent systems: Simulation and Applications, value: 0.0012285012285012285
+paper:  September 3-7, value: 0.0012285012285012285
+paper:  Supporting Action-at-a-distance in Situated Cellular Agents, value: 0.0012285012285012285
+paper: NavEditOW���a system for navigating, value: 0.0012285012285012285
+paper:  MMASS Approach to Localization Problems, value: 0.0012285012285012285
+paper:  Agent Based Modeling and Simulation, value: 0.0012285012285012285
+paper: Une pastorale spectaculaire, value: 0.0012285012285012285
+paper: Progress in Artificial Intelligence: 14th Portuguese Conference on Artificial Intelligence, value: 0.0012285012285012285
+paper: Antonello Colonna: un anarchico ai fornelli: da Labico a New York, value: 0.0012285012285012285
+paper:  Rende (CS), value: 0.0012285012285012285
+paper:  Modeling and Programming Asynchronous Automata Networks: The MOCA Approach, value: 0.0012285012285012285
+paper: Special track on Advances in Computer Simulation (ACS): editorial message, value: 0.0012285012285012285
+paper:  A Heterogeneous Multi-Agent System for Adaptive Web Applications, value: 0.0012285012285012285
+paper:  i barcamp, value: 0.0012285012285012285
+paper: Dynamic interaction spaces and situated multi-agent systems: from a multi-layered model to a distributed architecture, value: 0.0012285012285012285
+paper: Introduction to the special issue: The AgentLink III technical forums, value: 0.0012285012285012285
+paper: GUEST EDITORIAL: BEST OF ���AGENT-BASED MODELING AND SIMULATION���(ABModSim), value: 0.0012285012285012285
+paper:  PaCT 2005, value: 0.0012285012285012285
+paper:  PaCT 2007, value: 0.0012285012285012285
+paper: WWW in the Small, value: 0.0012285012285012285
+paper:  New York, value: 0.0012285012285012285
+paper:  Organizations and Environments, value: 0.0012285012285012285
+paper:  2006: selected revised and invited papers, value: 0.0012285012285012285
+paper:  October 12-15, value: 0.0012285012285012285
+paper: GIS and remote sensing to study urban-rural transformation during a fifty-year period, value: 0.0012285012285012285
+paper:  ESWC 2010, value: 0.0012285012285012285
+paper: I FRATELLI PLUTINO EI GRECANICI NEL RISORGIMENTO, value: 0.0012285012285012285
+paper:  Eemmas 2007, value: 0.0012285012285012285
+pure_index: 0.5319410319410309

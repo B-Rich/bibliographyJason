@@ -52,7 +52,7 @@ public class get_information extends DefaultInternalAction {
 					        System.out.println("page_papers: "+page_papers);
 					        
 					        for(Node page_paper : page_papers) {
-					        	papers.add(page_paper.text());
+					        	papers.add(java.net.URLDecoder.decode(page_paper.text().trim(), "UTF-8"));
 					        }
 				    	}
 				        
@@ -78,7 +78,7 @@ public class get_information extends DefaultInternalAction {
 				e.printStackTrace();
 			}
 			
-			result = Utils.join(papers, ",");
+			result = Utils.join(papers, "!!!");
 		}
 		
 		if(type.equals(DBLP)) {
@@ -104,7 +104,7 @@ public class get_information extends DefaultInternalAction {
 			    		String all_title = tds.get(2).text();
 			    		String title = all_title.substring(all_title.indexOf(":")+1);
 			    		title = title.substring(0, title.indexOf("."));
-			    		papers.add(title);
+			    		papers.add(java.net.URLDecoder.decode(title.trim(), "UTF-8"));
 			    	}
 			    }
 				
@@ -113,7 +113,7 @@ public class get_information extends DefaultInternalAction {
 				e.printStackTrace();
 			}
 			
-			result = Utils.join(papers, ",");
+			result = Utils.join(papers, "!!!");
 		}
         
         return un.unifies(args[2], new StringTermImpl(result));

@@ -1,0 +1,597 @@
+agent: dblp
+
+\begin{itemize}
+\item An analysis of different types and effects of asynchronicity in cellular automata update schemes
+\item Towards an agent-based proxemic model for pedestrian and group dynamics: motivations and first experiments
+\item An Agent Model of Pedestrian and Group Dynamics: Experiments on Group Cohesion
+\item An Agent-Based Proxemic Model for Pedestrian and Group Dynamics: Motivations and First Experiments
+\item A Cellular Automata Based Model for Pedestrian and Group Dynamics: Motivations and First Experiments
+\item MAKKSim: Dealing with Pedestrian Groups in MAS-based Crowd Simulation
+\item A Cellular Automata Model for Pedestrian and Group Dynamics
+\item Guest Editorial: Best OF "Agent Based Modelling and Simulation 2010" (ABModSim-3)
+\item CA-based self-organizing environments - The case of a configurable adaptive illumination facility
+\item Cellular Automata - 9th International Conference on Cellular Automata for Research and Industry, ACRI 2010, Ascoli Piceno, Italy, September 21-24, 2010
+\item A Cellular Automata-Based Modular Lighting System
+\item Modeling and Programming Asynchronous Automata Networks: The MOCA Approach
+\item What Do We Mean by Asynchronous CA? A Reflection on Types and Effects of Asynchronicity
+\item Exploiting Knowledge Based Systems to Support Manufacturing of Functional Food Products
+\item Rapid Prototyping a Semantic Web Application for Cultural Heritage: The Case of MANTIC
+\item Towards an Agent-Based Proxemic Model for Pedestrian and Group Dynamic
+\item Artificial Societies in a Community-Based Approach to Ambient Intelligence
+\item Semantic Querying For An Archeological E-Library
+\item Self-organization models for adaptive environments: Envisioning and evaluation of alternative approaches
+\item An Asynchronous Cellular Automata-Based Adaptive Illumination Facility
+\item Simulation of Alternative Self-Organization Models for an Adaptive Environment
+\item A CA-Based Self-organizing Environment: A Configurable Adaptive Illumination Facility
+\item Simulation supporting the design of self-organizing ambient intelligent systems
+\item Towards Hybrid Situated Agents Based Virtual Environments
+\item Experimenting Situated Cellular Agents in Indoor Scenario: Pedestrian Dynamics during Lecture Hall Evacuation
+\item Agent Based Modeling and Simulation
+\item Guest Editorial: Best of "Agent-Based Modeling and Simulation 2008" (Abmodsim-2)
+\item Agent Based Modeling and Simulation: An Informatics Perspective
+\item Special track on Advances in Computer Simulation (ACS): editorial message
+\item A framework for execution and 3D visualization of situated cellular agent based crowd simulations
+\item A CA-Based Self-Organized Illumination Facility
+\item A CA-Based Approach to Self-Organized Adaptive Environments: The Case of an Illumination Facility
+\item Integrating a Wiki in an Ontology Driven Web Site: Approach, Architecture and Application in the Archaeological Domain
+\item A System Supporting Users of Cultural Resource Management Semantic Portals
+\item Combining Interface Agents and Situated Agents for Deploying Adaptive Web Applications
+\item Environment Support to the Management of Context Awareness Information
+\item NavEditOW - A System for Navigating, Editing and Querying Ontologies Through the Web
+\item Pedestrian and Crowd Dynamics Simulation: Testing SCA on Paradigmatic Cases of Emerging Coordination in Negative Interaction Conditions
+\item Building Smart Environments as Agent Workspaces
+\item A Framework for Execution and Visualization of Situated Agents Based Virtual Environments
+\item A Framework for Interacting Situated Agents in Virtual Environments
+\item Substitutional Adaptation in Case-Based Reasoning: A General Framework Applied to P-Truck Curing
+\item Modeling dynamic environments in multi-agent simulation
+\item Guest Editorial: Best of "agent-based Modeling and Simulation" (abmodsim)
+\item Situated Cellular Agents Approach to Crowd Modeling and Simulation
+\item Multi-agent modeling of the immune system: The situated cellular agents approach
+\item Modelling the immune system: the case of situated cellular agents
+\item Awareness in collaborative ubiquitous environments: The Multilayered Multi-Agent Situated System approach
+\item WWW in the Small
+\item Visualization of Discrete Crowd Dynamics in a 3D Environment
+\item Regulation Function of the Environment in Agent-Based Simulation
+\item A Framework for Ontological Description of Archaeological Scientific Publications
+\item A Heterogeneous Multi-Agent System for Adaptive Web Applications
+\item Models, Abstractions and Phases in Multi-Agent Based Simulation
+\item Toward a platform for Multi-layered Multi-Agent Situated System (MMASS)-based simulations: focusing on field diffusion
+\item Supporting Action-at-a-distance in Situated Cellular Agents
+\item Coordinating change of agents' states in situated agents models
+\item Towards a General Framework for Substitutional Adaptation in Case-Based Reasoning
+\item Situated Agents and the Web: Supporting Site Adaptivity
+\item Environments for Situated Multi-agent Systems: Beyond Infrastructure
+\item Web Sites as Agents' Environments: General Framework and Applications
+\item Towards a Methodology for Situated Cellular Agent Based Crowd Simulations
+\item The Role of Knowledge Artifacts in Knowledge Maintenance
+\item Situated Agents Interaction: Coordinated Change of State for Adjacent Agents
+\item Modelling the Immune System with Situated Agents
+\item A Methodology for Crowd Modelling with Situated Cellular Agents
+\item A Spatially Dependent Communication Model for Ubiquitous Systems
+\item Case Based Reasoning and Production Process Design: The Case of P-Truck Curing
+\item Towards a Model for Ubiquitous and Mobile Computing
+\item Coordinated Change of State for Situated Agents
+\item Situated Cellular Agents: A Model to Simulate Crowding Dynamics
+\item Multi-agent approach to localization problems: The case of Multilayered Multi-Agent Situated System
+\item MMASS Approach to Localization Problems
+\item A Multi-Agent System for Remote Psychological Profiling with Role Playing Games Based Tests
+\item Situated Cellular Agents and Immune System Modelling
+\item Context dependent management of field diffusion: an experimental framework
+\item RPG-Profiler: a MAS for Role Playing Games Based Tests in Employee Assessment
+\end{itemize}
+
+\begin{itemize}
+\item Modeling dynamic environments in multi-agent simulation
+\item Situated cellular agents: A model to simulate crowding dynamics
+\item Situated cellular agents approach to crowd modeling and simulation
+\item Awareness in collaborative ubiquitous environments: The multilayered multi-agent situated system approach
+\item Toward a platform for multi-layered multi-agent situated system (MMASS)-based simulations: focusing on field diffusion
+\item Multi-agent approach to localization problems: The case of Multilayered Multi-Agent Situated System
+\item Environments for situated multi-agent systems: Beyond infrastructure
+\item Towards a methodology for situated cellular agent based crowd simulations
+\item Supporting action-at-a-distance in situated cellular agents
+\item Case based reasoning and production process design: the case of P-truck curing
+\item A spatially dependent communication model for ubiquitous systems
+\item Dynamic interaction spaces and situated multi-agent systems: from a multi-layered model to a distributed architecture
+\item NavEditOWa system for navigating, editing and querying ontologies through the web
+\item Cellular automata
+\item Regulation function of the environment in agent-based simulation
+\item Agent based modeling and simulation: an informatics perspective
+\item A framework for ontological description of archaeological scientific publications
+\item Crowd Modeling and Simulation
+\item A methodology for crowd modelling with situated cellular agents
+\item Web sites as agents' environments: General framework and applications
+\item Modelling the immune system: the case of situated cellular agents
+\item The role of knowledge artifacts in knowledge maintenance
+\item Situated cellular agents and immune system modelling
+\item Towards a model for ubiquitous and mobile computing
+\item Modelling the immune system with situated agents
+\item Cellular Automata: 9th International Conference on Cellular Automata for Research and Industry, ACRI 2010, Ascoli Piceno, Italy, September 21-24, 2010, 
+\item Pedestrian and crowd dynamics simulation: Testing sca on paradigmatic cases of emerging coordination in negative interaction conditions
+\item A framework for execution and 3D visualization of situated cellular agent based crowd simulations
+\item MMASS approach to localization problems
+\item An Asynchronous Cellular Automata-Based Adaptive Illumination Facility
+\item A system supporting users of cultural resource management semantic portals
+\item Integrating a Wiki in an Ontology Driven Web Site: Approach, Architecture and Application in the Archaeological Domain
+\item Towards an agent-based proxemic model for pedestrian and group dynamic
+\item Substitutional adaptation in case-based reasoning: a general framework applied to P-Truck curing
+\item Simulating and Visualizing Crowd Dynamics with Computational Tools based on Situated Cellular Agents
+\item Coordinating change of agents' states in situated agents models
+\item Models, abstractions and phases in multi-agent based simulation
+\item Situated cellular agents for crowd simulation and visualization
+\item Environment support to the management of context awareness information
+\item Multi-agent modeling of the immune system: The situated cellular agents approach
+\item WWW in the Small
+\item An Agent Model for Collaborative Ubiquitous Environments
+\item Special track on Advances in Computer Simulation (ACS)
+\item Tecnologie della mobilita e servizi consapevoli del contesto
+\item A passo d'uomo
+\item Agent Based Modeling and Simulation: An Informatics Perspective
+\item A fuzzy NL interface for dialogue-based information retrieval
+\item Smart Environments as Agent Workspaces
+\item Supporting action-at-a-distance in Situated Cellular Agents
+\item crowds&ped 2009
+\item Models, abstractions and phases in multi-agent based simulation
+\item Makksim: Dealing with pedestrian groups in mas-based crowd simulation
+\item Second International Symposium on Agent Based Modeling and Simulation
+\item Coupled MMASS: A Formal Model for Non-deterministic Multi-agent Simulations
+\item Web Intelligence and Intelligent Agent Technology. Proceedings of the 2009 IEEE/WIC/ACM International Conference on Web Intelligence, Worshops
+\item Modellazione e simulazione di folle: l'approccio degli agenti cellulari situati
+\item International symposium on agent based modeling and simulation (ABModSim 2006), University of Vienna
+\item Reference Architecture and Framework
+\item dagli Oggetti agli Agenti
+\item Rende (CS), 4th-6th July 2011 University Club University of Calabria, Campus of Arcavacata, Rende (CS)
+\item A CA-Based Self-organizing Environment: A Configurable Adaptive Illumination Facility
+\item Situated agents interaction: Coordinated change of state for adjacent agents
+\item A cellular automata-based modular lighting system
+\item An integrated approach to the valorization of cultural heritage
+\item A CA-Based Approach to Self-Organized Adaptive Environments: The Case of an Illumination Facility
+\item Immune System Modelling with Situated Cellular Agents
+\item Coordinated change of state for situated agents
+\item A Framework for Interacting Situated Agents in Virtual Environments
+\item Primo modulo: Rappresentazione della conoscenza
+\item INTELLIGENZA ARTIFICIALE (F9201P088) CFU: 4
+\item Multi-agent systems: Simulation and Applications
+\item Towards an agent-based proxemic model for pedestrian and group dynamics: motivations and first experiments
+\item A hybrid agent architecture for situated agents based virtual environments
+\item GUEST EDITORIAL: BEST OF AGENT-BASED MODELING AND SIMULATION 2008(ABMODSIM-2)
+\item Coupled MMASS: A Formal Model for Non-deterministic Multi-agent Simulations
+\item Modeling and programming asynchronous automata networks: The MOCA approach
+\item Towards hybrid situated agents based virtual environments
+\item Situated agents and the Web: Supporting site adaptivity
+\item Building Smart Environments as Agent Workspaces
+\item Simulation supporting the design of self-organizing ambient intelligent systems
+\item A Framework for Simulated Crowd Behavior in Virtual Environments
+\item An agent model of pedestrian and group dynamics: experiments on group cohesion
+\item Simulation of alternative self-organization models for an adaptive environment
+\item An Agent-Based Proxemic Model for Pedestrian and Group Dynamics: Motivations and First Experiments
+\item A multi-agent system for remote psychological profiling with role playing games based tests
+\item GUEST EDITORIAL: BEST OF AGENT-BASED MODELING AND SIMULATION(ABModSim)
+\item A cellular automata based model for pedestrian and group dynamics: motivations and first experiments
+\item Pedestrian behavior: models, data collection and applications
+\item Engineering Environment-Mediated Multi-Agent Systems: International Workshop, Eemmas 2007, Dresden, Germany, October 5, 2007, Selected Revised 
+\item A framework for execution and visualization of situated agents based virtual environments
+\item Recent advances in design and decision support systems in architecture and urban planning
+\item AI* IA 2005: advances in artificial intelligence: 9th Congress of the Italian Association for Artificial Intelligence, Milan, Italy, September 21-23, 2005; 
+\item An Ontology Driven Web Site and its Application in the Archaeological Context
+\item Design Computing and Cognition'10
+\item An analysis of different types and effects of asynchronicity in cellular automata update schemes
+\item Towards a general framework for substitutional adaptation in case-based reasoning
+\item NavEditOW-A System for Navigating, Editing and Querying Ontologies Through the Web Knowledge-Based Intelligent Information and Engineering 
+\item A Perception Oriented MAS Model with Hybrid Commonsense Spatial Reasoning
+\item WI-IAT Workshops 2009
+\item A Cellular Automata Model for Pedestrian and Group Dynamics
+\item GUEST EDITORIAL: BEST OF AGENT BASED MODELLING AND SIMULATION 2010(ABModSim-3)
+\item A Framework for Executing and Visualizing Cellular Agent Based Crowd Simulations
+\item DESIGN CREATIVITY
+\item An Agent-Based Model for Pedestrian and Group Dynamics: Experimental and Real-World Scenarios
+\item Combining Interface agents and Situated agents for deploying Adaptive Web applications
+\item Agent Based Modeling and Simulation
+\item Special track on Advances in Computer Simulation (ACS): editorial message
+\item Agent-Based Pedestrian Modeling and Simulation
+\item Experimenting Situated Cellular Agents in Indoor Scenario: Pedestrian Dynamics during Lecture Hall Evacuation
+\item An Agent Model for Collaborative Ubiquitous-Computing Environments
+\item Self-organization models for adaptive environments: Envisioning and evaluation of alternative approaches
+\item A CA-Based Self-Organized Illumination Facility
+\item CA-based self-organizing environments
+\item An Agent-Based Model for Pedestrian and Group Dynamics Applied in a Real-World Scenario
+\item SMART ENVIRONMENTS AS AGENTS WORKSPACES
+\item Supporting the Design of Self-Organizing Ambient Intelligent Systems Through AgentBased Simulation
+\item Commerce and Trading Technologies
+\item An Agent-Based Approach to Pedestrian and Group Dynamics: Experimental and Real World Scenarios
+\item Space in Multi-agent Systems
+\item Towards a Model for Archaeological Phases Detection and Interpretation
+\item Enabling Creativity through Innovation Challenges: The Case of Interactive Lightning
+\item Special Issue of" Cybernetics and Systems" V. 38 (7): Best of" Agent-Based Modeling and Simulation 2008"
+\item Simulation of Alternative Self-Organization Models for an Adaptive Environment
+\item The 3 rd International Workshop on Multi-Agent Systems and Simulation (MAS&S): Towards an Integration of Agent-Oriented Software Engineering and 
+\item Modelling, Simulating and Visualizing Complex Dynamics with SCA platform
+\item Dipartimento di Informatica e Scienze dell'Informazione
+\item Logic and the simulation of interaction and reasoning: Introductory remarks
+\item Parallel computing technologies: 8th international conference, PaCT 2005, Krasnoyarsk, Russia, September 5-9, 2005: proceedings
+\item WI'09 and IAT'09 Conference Organization
+\item The 4 rd International Workshop on Multi-Agent Systems and Simulation (MAS&S): Engineering Complex Systems through Agent-Based Modeling and 
+\item WET ICE 2007 Participants
+\item IAT 2009
+\item IAT 2009
+\item Multi-channel Adaptive Information Systems
+\item AI/AI 2011: Artificial Intelligence Around Man and Beyond: XIIth International Conference of the Italian Association for Artificial Intelligence, Palermo, Italy, 
+\item Environments for multi-agent systems: first international workshop, E4MAS 2004, New York, NY, July 19, 2004; revised selected papers
+\item Environments for multi-agent systems III: third international workshop, E4MAS 2006, Hakodate, Japan, May 8, 2006: selected revised and invited papers
+\item Advances in Case-based Reasoning: 7th European Conference, ECCBR 2004, Madrid, Spain, August 30-September 2, 2004: Proceedings
+\item Introduction to the special issue: The AgentLink III technical forums
+\item Current Developments and Future Challenges of Coordination in Pervasive Environments
+\item The AgentLink III Technical Forums: Introduction to the Special Issue
+\item AI* IA 2007: artificial intelligence and human-oriented computing: 10th Congress of the Italian Association for Artificial Intelligence, Rome, Italy, September 10 
+\item Position Paper Auto-Gerenciamento em um Grid SMA
+\item Environments for Multi-Agent Systems 2004
+\item CoMA Workshop Final Report
+\item Balanced Automation Systems for Future Manufacturing Networks: 9th IFIP WG 5.5 International Conference, BASYS 2010, Valencia, Spain, July 21-23, 2010 
+\item Logic and theory of algorithms: 4th Conference on Computability in Europe, CiE 2008, Athens, Greece, June 15-20, 2008: proceedings
+\item Mathematical Theory and Computational Practice: 5th Conference on Computability in Europe, CiE 2009, Heidelberg, Germany, July 19-24, 2009, 
+\item A heterogeneous multi-agent system for adaptive web applications
+\item Parallel computing technologies: 9th international conference, PaCT 2007, Pereslavl-Zalessky, Russia, September 3-7, 2007; proceedings
+\item Fauna Etvetica
+\item Development of a game simulation to analyze coalitions in agents
+\item A virtual e-retailing environment in golem
+\item The Semantic Web: Research and Applications: 7th Extended Semantic Web Conference, ESWC 2010, Heraklion, Crete, Greece, May 30-June 3, 2010, 
+\item Probing robustness of cellular automata through variations of asynchronous updating
+\item Progress in Artificial Intelligence: 15th Portuguese Conference on Artificial Intelligence, Epia 2011, Lisbon, Portugal, October 10-13, 2011, Proceedings
+\item Progress in Artificial Intelligence: 14th Portuguese Conference on Artificial Intelligence, EPIA 2009, Aveiro, Portugal, October 12-15, 2009, Proceedings
+\item A model of multi-agent system based on immune evolution
+\item Towards a Coordination Framework for Pervasive Environments.
+\item An integral approach to Agents, Organizations and Environments
+\item First steps on asynchronous lattice-gas models with an application to a swarming rule
+\item Scientific Visit from HajjCoRE to USMPenangMalaysia
+\item Ausarbeitung Anwendungen 2-SoSe 2011
+\item Multi-agent systems as discrete dynamical systems: influences and reactions as a modelling principle
+\item Mariano Rossi's Camillus Fresco in the Borghese Gallery
+\item Progress Report 01 ConsRel, Fapesp Project 2004/14107-2 Logical Consequence and Combinations of LogicsFundaments and Efficient Applications
+\item Temporalised epistemic logic for reasoning about agent-based systems| Macquarie University ResearchOnline
+\item RULE-BASED SUPPORT FOR INTEGRATED SECURITY SYSTEMS
+\item Indirect interaction in environments for multi-agent systems
+\item ANALYSIS OF VARIOUS URBAN GROWTH MODELS BASED ON CELLULAR AUTOMATA
+\item Guest editorial preface: Software and system engineering: an ontological perspective
+\item Multi-agent systems and simulation: a survey from an application perspective
+\item Combating implant infections. Remarks by a women's team
+\item Laboratori del SECONDO ANNO
+\item Un libro per Haiti
+\item Progettazione e realizzazione di un'architettura per applicazioni Web basata sul modello MMASS: un esempio applicativo per il monitoraggio di siti e visitatori.
+\item Analisi e Progettazione di Pratiche Didattiche in Media Education. Una ricerca su sei paesi europei
+\item Les fonds d'archives ecclsiastiques en Italie mridionale
+\item Decentralised gathering on a discrete field: coupling reaction-diffusion and chemotaxis as social amoebae do
+\item Bio-ICT Convergence: Filling the Gap Between Computer Science and Biology
+\item PASSIONE STORICA E STORIA CIVICA NELLA CALABRIA NORDOCCIDENTALE. RASSEGNA BIBLIOGRAFICA E RIFLESSIONI STORIOGRAFICHE
+\item Introducing Girolamo Pesci
+\item A Software infrastructure for multi-agent geosimulation applications
+\item Means of expression, rendering and analysis of collective reactions in social interaction environments
+\item Marketing e comunicazione non profit
+\item Case-Based Troubleshooting in the Automotive Context: The SMMART Project
+\item GIS and remote sensing to study urban-rural transformation during a fifty-year period
+\item Modelling proximal space in urban cellular automata
+\item Notizie per lnno 1808. dedicate all?... Cardinale Antonio Despuig y Dameto del titolo di S. Calisto, e Arciprete della Patriarcale Basilica di S. Maria 
+\item A Multi-Agent Geosimulation Infrastructure for Planning
+\item Service-oriented computing: ICSOC 2005: third international conference, Amsterdam, The Netherlands, December 12-15, 2005: proceedings
+\item Sessuologia medica. Trattato di psicosessuologia e medicina della sessualit
+\item A general-purpose geosimulation infrastructure for spatial decision support
+\item I FRATELLI PLUTINO EI GRECANICI NEL RISORGIMENTO
+\item primary sources Albizzi, Francesco. De inconstantia in iure admittenda vel non, opus in varios
+\item Le associazioni sacerdotali. Per una tipologia delle associazioni italiane dal Medioevo a oggi
+\item 1. negotiated relations Epigraph, p. 1: The eight-line stanzas placed at the head of each chapter are
+\item Gradient Field Based Order Assignment in AGV Systems
+\item Computational Science and Its Applications-ICCSA 2011: International Conference, Santander, Spain, June 20-23, 2011. Proceedings
+\item Il nuovo codice dei contratti pubblici di lavori, servizi e forniture: commentario sistematico
+\item MILANO, MONDADORI, 1991
+\item A comparison of recombinant urokinase with vascular surgery as initial treatment for acute arterial occlusion of the legs
+\item Le due zone d'intervento
+\item BASILICATA POTENZA POTENZA UNIVERSITA'DEGLI STUDI DELLA BASILICATA/DAPIT
+\item I santolilli: culti dell'infanzia e santit infantile a Napoli alla fine del XVII secolo
+\item Un modelo abierto de proximidad para el descubrimiento de servicios en computacin pervasiva
+\item The following list contains a selection of recent books on music. All prices are net, and in the case of foreign books the figure quoted is that at which the cheapest copy 
+\item Media education in action. A research study in six european countries
+\item Il santo del secolo dei lumi: Alfonso de'Liguori (1696-1787)
+\item POP LA NUOVA GRANDE CUCINA ITALIANA
+\item Ebookfest tracce 2010. I seminari, le presentazioni, le tavole rotonde, i barcamp
+\item Une pastorale spectaculaire
+\item Conoscere il Roccamonfina
+\item The physiology of love and other writings
+\item VII Convegno AISSA AGRICOLTURA, QUALIT DELL'AMBIENTE E SALUTE
+\item Le memorie del vecchio maresciallo
+\item Integrated Spatial Assessment (ISA): A Multi-Methodological Approach for Planning Choices
+\item Sizilien: Im Bann des tnas
+\item Romolo Ferrari e la chitarra in Italia nella prima met del Novecento
+\item La scelta del corpo e la costruzione dell'identit. Una lettura etnografica di esperienze della transizione di genere
+\item ANZIANI: QUALIT DELLA VITA E
+\item Antonello Colonna: un anarchico ai fornelli: da Labico a New York
+\item INTERGENERAZIONALE
+\item L'ANZIANO E LA COMUNICAZIONE
+\item Airborne sensor integration and direct orientation of the CASI system
+\item Sessualita Narrate
+\item Bracing for disaster: earthquake-resistant architecture and engineering in San Francisco, 1838-1933
+\item Young Digizen? New cultural challenges in media education
+\item Das rojos, verano negro
+\end{itemize}
+
+\begin{itemize}
+\item key: Web Intelligence and Intelligent Agent Technology. Proceedings of the 2009 IEEE/WIC/ACM International Conference on Web Intelligence, Worshops, value: 0.0017857142857142857
+\item key: Visualization of Discrete Crowd Dynamics in a 3D Environment, value: 0.0017857142857142857
+\item key: PASSIONE STORICA E STORIA CIVICA NELLA CALABRIA NORDOCCIDENTALE. RASSEGNA BIBLIOGRAFICA E RIFLESSIONI STORIOGRAFICHE, value: 0.0017857142857142857
+\item key: Le memorie del vecchio maresciallo, value: 0.0017857142857142857
+\item key: Bio-ICT Convergence: Filling the Gap Between Computer Science and Biology, value: 0.0017857142857142857
+\item key: Logic and the simulation of interaction and reasoning: Introductory remarks, value: 0.0017857142857142857
+\item key: An Agent-Based Model for Pedestrian and Group Dynamics Applied in a Real-World Scenario, value: 0.0017857142857142857
+\item key: Agent Based Modeling and Simulation: An Informatics Perspective, value: 0.0035714285714285713
+\item key: Marketing e comunicazione non profit, value: 0.0017857142857142857
+\item key: Towards a Model for Archaeological Phases Detection and Interpretation, value: 0.0017857142857142857
+\item key: Coupled MMASS: A Formal Model for Non-deterministic Multi-agent Simulations, value: 0.0035714285714285713
+\item key: Sessuologia medica. Trattato di psicosessuologia e medicina della sessualit, value: 0.0017857142857142857
+\item key: Multi-agent approach to localization problems: The case of Multilayered Multi-Agent Situated System, value: 0.0035714285714285713
+\item key: Simulating and Visualizing Crowd Dynamics with Computational Tools based on Situated Cellular Agents, value: 0.0017857142857142857
+\item key: crowds&ped 2009, value: 0.0017857142857142857
+\item key: primary sources Albizzi, Francesco. De inconstantia in iure admittenda vel non, opus in varios, value: 0.0017857142857142857
+\item key: Towards Hybrid Situated Agents Based Virtual Environments, value: 0.0017857142857142857
+\item key: Enabling Creativity through Innovation Challenges: The Case of Interactive Lightning, value: 0.0017857142857142857
+\item key: Progress in Artificial Intelligence: 15th Portuguese Conference on Artificial Intelligence, Epia 2011, Lisbon, Portugal, October 10-13, 2011, Proceedings, value: 0.0017857142857142857
+\item key: Rapid Prototyping a Semantic Web Application for Cultural Heritage: The Case of MANTIC, value: 0.0017857142857142857
+\item key: Situated cellular agents approach to crowd modeling and simulation, value: 0.0017857142857142857
+\item key: A Software infrastructure for multi-agent geosimulation applications, value: 0.0017857142857142857
+\item key: The role of knowledge artifacts in knowledge maintenance, value: 0.0017857142857142857
+\item key: Guest editorial preface: Software and system engineering: an ontological perspective, value: 0.0017857142857142857
+\item key: Towards an agent-based proxemic model for pedestrian and group dynamic, value: 0.0017857142857142857
+\item key: Analisi e Progettazione di Pratiche Didattiche in Media Education. Una ricerca su sei paesi europei, value: 0.0017857142857142857
+\item key: Probing robustness of cellular automata through variations of asynchronous updating, value: 0.0017857142857142857
+\item key: Modeling and programming asynchronous automata networks: The MOCA approach, value: 0.0017857142857142857
+\item key: A framework for execution and visualization of situated agents based virtual environments, value: 0.0017857142857142857
+\item key: IAT 2009, value: 0.0035714285714285713
+\item key: Un modelo abierto de proximidad para el descubrimiento de servicios en computacin pervasiva, value: 0.0017857142857142857
+\item key: I santolilli: culti dell'infanzia e santit infantile a Napoli alla fine del XVII secolo, value: 0.0017857142857142857
+\item key: Ausarbeitung Anwendungen 2-SoSe 2011, value: 0.0017857142857142857
+\item key: Cellular Automata: 9th International Conference on Cellular Automata for Research and Industry, ACRI 2010, Ascoli Piceno, Italy, September 21-24, 2010, , value: 0.0017857142857142857
+\item key: Supporting action-at-a-distance in situated cellular agents, value: 0.0017857142857142857
+\item key: Commerce and Trading Technologies, value: 0.0017857142857142857
+\item key: Space in Multi-agent Systems, value: 0.0017857142857142857
+\item key: Immune System Modelling with Situated Cellular Agents, value: 0.0017857142857142857
+\item key: Parallel computing technologies: 9th international conference, PaCT 2007, Pereslavl-Zalessky, Russia, September 3-7, 2007; proceedings, value: 0.0017857142857142857
+\item key: Situated Cellular Agents: A Model to Simulate Crowding Dynamics, value: 0.0017857142857142857
+\item key: Mariano Rossi's Camillus Fresco in the Borghese Gallery, value: 0.0017857142857142857
+\item key: A Framework for Interacting Situated Agents in Virtual Environments, value: 0.0035714285714285713
+\item key: Indirect interaction in environments for multi-agent systems, value: 0.0017857142857142857
+\item key: A heterogeneous multi-agent system for adaptive web applications, value: 0.0017857142857142857
+\item key: Crowd Modeling and Simulation, value: 0.0017857142857142857
+\item key: SMART ENVIRONMENTS AS AGENTS WORKSPACES, value: 0.0017857142857142857
+\item key: "An analysis of different types and effects of asynchronicity in cellular automata update schemes, value: 0.0017857142857142857
+\item key: Modelling the Immune System with Situated Agents, value: 0.0017857142857142857
+\item key: Substitutional Adaptation in Case-Based Reasoning: A General Framework Applied to P-Truck Curing, value: 0.0017857142857142857
+\item key: Guest Editorial: Best of "agent-based Modeling and Simulation" (abmodsim), value: 0.0017857142857142857
+\item key: Pedestrian and Crowd Dynamics Simulation: Testing SCA on Paradigmatic Cases of Emerging Coordination in Negative Interaction Conditions, value: 0.0017857142857142857
+\item key: A comparison of recombinant urokinase with vascular surgery as initial treatment for acute arterial occlusion of the legs, value: 0.0017857142857142857
+\item key: Computational Science and Its Applications-ICCSA 2011: International Conference, Santander, Spain, June 20-23, 2011. Proceedings, value: 0.0017857142857142857
+\item key: WET ICE 2007 Participants, value: 0.0017857142857142857
+\item key: NavEditOW - A System for Navigating, Editing and Querying Ontologies Through the Web, value: 0.0017857142857142857
+\item key: Ebookfest tracce 2010. I seminari, le presentazioni, le tavole rotonde, i barcamp, value: 0.0017857142857142857
+\item key: dagli Oggetti agli Agenti, value: 0.0017857142857142857
+\item key: Coordinated Change of State for Situated Agents, value: 0.0017857142857142857
+\item key: Second International Symposium on Agent Based Modeling and Simulation, value: 0.0017857142857142857
+\item key: An Agent Model for Collaborative Ubiquitous-Computing Environments, value: 0.0017857142857142857
+\item key: An agent model of pedestrian and group dynamics: experiments on group cohesion, value: 0.0017857142857142857
+\item key: A cellular automata based model for pedestrian and group dynamics: motivations and first experiments, value: 0.0017857142857142857
+\item key: Media education in action. A research study in six european countries, value: 0.0017857142857142857
+\item key: Web sites as agents' environments: General framework and applications, value: 0.0017857142857142857
+\item key: Case based reasoning and production process design: the case of P-truck curing, value: 0.0017857142857142857
+\item key: Progress in Artificial Intelligence: 14th Portuguese Conference on Artificial Intelligence, EPIA 2009, Aveiro, Portugal, October 12-15, 2009, Proceedings, value: 0.0017857142857142857
+\item key: Building Smart Environments as Agent Workspaces, value: 0.0035714285714285713
+\item key: Special track on Advances in Computer Simulation (ACS), value: 0.0017857142857142857
+\item key: A Framework for Simulated Crowd Behavior in Virtual Environments, value: 0.0017857142857142857
+\item key: Case Based Reasoning and Production Process Design: The Case of P-Truck Curing, value: 0.0017857142857142857
+\item key: An analysis of different types and effects of asynchronicity in cellular automata update schemes, value: 0.0017857142857142857
+\item key: Modeling and Programming Asynchronous Automata Networks: The MOCA Approach, value: 0.0017857142857142857
+\item key: Guest Editorial: Best of "Agent-Based Modeling and Simulation 2008" (Abmodsim-2), value: 0.0017857142857142857
+\item key: Balanced Automation Systems for Future Manufacturing Networks: 9th IFIP WG 5.5 International Conference, BASYS 2010, Valencia, Spain, July 21-23, 2010 , value: 0.0017857142857142857
+\item key: Airborne sensor integration and direct orientation of the CASI system, value: 0.0017857142857142857
+\item key: Agent Based Modeling and Simulation, value: 0.0035714285714285713
+\item key: A methodology for crowd modelling with situated cellular agents, value: 0.0017857142857142857
+\item key: RULE-BASED SUPPORT FOR INTEGRATED SECURITY SYSTEMS, value: 0.0017857142857142857
+\item key: A passo d'uomo, value: 0.0017857142857142857
+\item key: Simulation of Alternative Self-Organization Models for an Adaptive Environment, value: 0.0035714285714285713
+\item key: A Multi-Agent Geosimulation Infrastructure for Planning, value: 0.0017857142857142857
+\item key: Supporting action-at-a-distance in Situated Cellular Agents, value: 0.0017857142857142857
+\item key: Design Computing and Cognition'10, value: 0.0017857142857142857
+\item key: A Methodology for Crowd Modelling with Situated Cellular Agents, value: 0.0017857142857142857
+\item key: Environments for Multi-Agent Systems 2004, value: 0.0017857142857142857
+\item key: INTELLIGENZA ARTIFICIALE (F9201P088) CFU: 4, value: 0.0017857142857142857
+\item key: Environments for multi-agent systems: first international workshop, E4MAS 2004, New York, NY, July 19, 2004; revised selected papers, value: 0.0017857142857142857
+\item key: MILANO, MONDADORI, 1991, value: 0.0017857142857142857
+\item key: "Modeling dynamic environments in multi-agent simulation, value: 0.0017857142857142857
+\item key: A framework for ontological description of archaeological scientific publications, value: 0.0017857142857142857
+\item key: Engineering Environment-Mediated Multi-Agent Systems: International Workshop, Eemmas 2007, Dresden, Germany, October 5, 2007, Selected Revised , value: 0.0017857142857142857
+\item key: An Agent Model for Collaborative Ubiquitous Environments, value: 0.0017857142857142857
+\item key: Parallel computing technologies: 8th international conference, PaCT 2005, Krasnoyarsk, Russia, September 5-9, 2005: proceedings, value: 0.0017857142857142857
+\item key: Multi-agent systems and simulation: a survey from an application perspective, value: 0.0017857142857142857
+\item key: Bracing for disaster: earthquake-resistant architecture and engineering in San Francisco, 1838-1933, value: 0.0017857142857142857
+\item key: Simulation supporting the design of self-organizing ambient intelligent systems, value: 0.0035714285714285713
+\item key: WI-IAT Workshops 2009, value: 0.0017857142857142857
+\item key: L'ANZIANO E LA COMUNICAZIONE, value: 0.0017857142857142857
+\item key: Environments for situated multi-agent systems: Beyond infrastructure, value: 0.0017857142857142857
+\item key: Regulation Function of the Environment in Agent-Based Simulation, value: 0.0017857142857142857
+\item key: A general-purpose geosimulation infrastructure for spatial decision support, value: 0.0017857142857142857
+\item key: Regulation function of the environment in agent-based simulation, value: 0.0017857142857142857
+\item key: Toward a platform for Multi-layered Multi-Agent Situated System (MMASS)-based simulations: focusing on field diffusion, value: 0.0017857142857142857
+\item key: Special Issue of" Cybernetics and Systems" V. 38 (7): Best of" Agent-Based Modeling and Simulation 2008", value: 0.0017857142857142857
+\item key: Les fonds d'archives ecclsiastiques en Italie mridionale, value: 0.0017857142857142857
+\item key: Multi-agent modeling of the immune system: The situated cellular agents approach, value: 0.0035714285714285713
+\item key: First steps on asynchronous lattice-gas models with an application to a swarming rule, value: 0.0017857142857142857
+\item key: Environments for Situated Multi-agent Systems: Beyond Infrastructure, value: 0.0017857142857142857
+\item key: Self-organization models for adaptive environments: Envisioning and evaluation of alternative approaches, value: 0.0035714285714285713
+\item key: The 4 rd International Workshop on Multi-Agent Systems and Simulation (MAS&S): Engineering Complex Systems through Agent-Based Modeling and , value: 0.0017857142857142857
+\item key: An integrated approach to the valorization of cultural heritage, value: 0.0017857142857142857
+\item key: Development of a game simulation to analyze coalitions in agents, value: 0.0017857142857142857
+\item key: Cellular automata, value: 0.0017857142857142857
+\item key: Primo modulo: Rappresentazione della conoscenza, value: 0.0017857142857142857
+\item key: Environments for multi-agent systems III: third international workshop, E4MAS 2006, Hakodate, Japan, May 8, 2006: selected revised and invited papers, value: 0.0017857142857142857
+\item key: Situated cellular agents for crowd simulation and visualization, value: 0.0017857142857142857
+\item key: A spatially dependent communication model for ubiquitous systems, value: 0.0017857142857142857
+\item key: Simulation of alternative self-organization models for an adaptive environment, value: 0.0017857142857142857
+\item key: Supporting the Design of Self-Organizing Ambient Intelligent Systems Through AgentBased Simulation, value: 0.0017857142857142857
+\item key: Le associazioni sacerdotali. Per una tipologia delle associazioni italiane dal Medioevo a oggi, value: 0.0017857142857142857
+\item key: An Agent-Based Approach to Pedestrian and Group Dynamics: Experimental and Real World Scenarios, value: 0.0017857142857142857
+\item key: Environment support to the management of context awareness information, value: 0.0017857142857142857
+\item key: Position Paper Auto-Gerenciamento em um Grid SMA, value: 0.0017857142857142857
+\item key: Integrating a Wiki in an Ontology Driven Web Site: Approach, Architecture and Application in the Archaeological Domain, value: 0.0035714285714285713
+\item key: Situated agents and the Web: Supporting site adaptivity, value: 0.0017857142857142857
+\item key: CoMA Workshop Final Report, value: 0.0017857142857142857
+\item key: A Cellular Automata Model for Pedestrian and Group Dynamics, value: 0.0035714285714285713
+\item key: A fuzzy NL interface for dialogue-based information retrieval, value: 0.0017857142857142857
+\item key: A Perception Oriented MAS Model with Hybrid Commonsense Spatial Reasoning, value: 0.0017857142857142857
+\item key: MAKKSim: Dealing with Pedestrian Groups in MAS-based Crowd Simulation, value: 0.0017857142857142857
+\item key: Modellazione e simulazione di folle: l'approccio degli agenti cellulari situati, value: 0.0017857142857142857
+\item key: DESIGN CREATIVITY, value: 0.0017857142857142857
+\item key: RPG-Profiler: a MAS for Role Playing Games Based Tests in Employee Assessment", value: 0.0017857142857142857
+\item key: MMASS approach to localization problems, value: 0.0017857142857142857
+\item key: Logic and theory of algorithms: 4th Conference on Computability in Europe, CiE 2008, Athens, Greece, June 15-20, 2008: proceedings, value: 0.0017857142857142857
+\item key: Tecnologie della mobilita e servizi consapevoli del contesto, value: 0.0017857142857142857
+\item key: A virtual e-retailing environment in golem, value: 0.0017857142857142857
+\item key: A Spatially Dependent Communication Model for Ubiquitous Systems, value: 0.0017857142857142857
+\item key: Guest Editorial: Best OF "Agent Based Modelling and Simulation 2010" (ABModSim-3), value: 0.0017857142857142857
+\item key: Multi-channel Adaptive Information Systems, value: 0.0017857142857142857
+\item key: A Cellular Automata-Based Modular Lighting System, value: 0.0017857142857142857
+\item key: NavEditOW-A System for Navigating, Editing and Querying Ontologies Through the Web Knowledge-Based Intelligent Information and Engineering , value: 0.0017857142857142857
+\item key: Modelling the immune system with situated agents, value: 0.0017857142857142857
+\item key: A system supporting users of cultural resource management semantic portals, value: 0.0017857142857142857
+\item key: An integral approach to Agents, Organizations and Environments, value: 0.0017857142857142857
+\item key: Reference Architecture and Framework, value: 0.0017857142857142857
+\item key: GUEST EDITORIAL: BEST OF AGENT-BASED MODELING AND SIMULATION 2008(ABMODSIM-2), value: 0.0017857142857142857
+\item key: The AgentLink III Technical Forums: Introduction to the Special Issue, value: 0.0017857142857142857
+\item key: VII Convegno AISSA AGRICOLTURA, QUALIT DELL'AMBIENTE E SALUTE, value: 0.0017857142857142857
+\item key: NavEditOWa system for navigating, editing and querying ontologies through the web, value: 0.0017857142857142857
+\item key: Towards a general framework for substitutional adaptation in case-based reasoning, value: 0.0017857142857142857
+\item key: Sizilien: Im Bann des tnas, value: 0.0017857142857142857
+\item key: Smart Environments as Agent Workspaces, value: 0.0017857142857142857
+\item key: Case-Based Troubleshooting in the Automotive Context: The SMMART Project, value: 0.0017857142857142857
+\item key: Awareness in collaborative ubiquitous environments: The multilayered multi-agent situated system approach, value: 0.0017857142857142857
+\item key: Scientific Visit from HajjCoRE to USMPenangMalaysia, value: 0.0017857142857142857
+\item key: Agent-Based Pedestrian Modeling and Simulation, value: 0.0017857142857142857
+\item key: Agent based modeling and simulation: an informatics perspective, value: 0.0017857142857142857
+\item key: Situated cellular agents and immune system modelling, value: 0.0017857142857142857
+\item key: A CA-Based Approach to Self-Organized Adaptive Environments: The Case of an Illumination Facility, value: 0.0035714285714285713
+\item key: An Agent-Based Model for Pedestrian and Group Dynamics: Experimental and Real-World Scenarios, value: 0.0017857142857142857
+\item key: A Heterogeneous Multi-Agent System for Adaptive Web Applications, value: 0.0017857142857142857
+\item key: Towards a methodology for situated cellular agent based crowd simulations, value: 0.0017857142857142857
+\item key: An Agent Model of Pedestrian and Group Dynamics: Experiments on Group Cohesion, value: 0.0017857142857142857
+\item key: Cellular Automata - 9th International Conference on Cellular Automata for Research and Industry, ACRI 2010, Ascoli Piceno, Italy, September 21-24, 2010, value: 0.0017857142857142857
+\item key: Makksim: Dealing with pedestrian groups in mas-based crowd simulation, value: 0.0017857142857142857
+\item key: A Cellular Automata Based Model for Pedestrian and Group Dynamics: Motivations and First Experiments, value: 0.0017857142857142857
+\item key: Conoscere il Roccamonfina, value: 0.0017857142857142857
+\item key: Progettazione e realizzazione di un'architettura per applicazioni Web basata sul modello MMASS: un esempio applicativo per il monitoraggio di siti e visitatori., value: 0.0017857142857142857
+\item key: Mathematical Theory and Computational Practice: 5th Conference on Computability in Europe, CiE 2009, Heidelberg, Germany, July 19-24, 2009, , value: 0.0017857142857142857
+\item key: The 3 rd International Workshop on Multi-Agent Systems and Simulation (MAS&S): Towards an Integration of Agent-Oriented Software Engineering and , value: 0.0017857142857142857
+\item key: Means of expression, rendering and analysis of collective reactions in social interaction environments, value: 0.0017857142857142857
+\item key: Coordinated change of state for situated agents, value: 0.0017857142857142857
+\item key: A multi-agent system for remote psychological profiling with role playing games based tests, value: 0.0017857142857142857
+\item key: The following list contains a selection of recent books on music. All prices are net, and in the case of foreign books the figure quoted is that at which the cheapest copy , value: 0.0017857142857142857
+\item key: An Asynchronous Cellular Automata-Based Adaptive Illumination Facility, value: 0.0035714285714285713
+\item key: Towards an agent-based proxemic model for pedestrian and group dynamics: motivations and first experiments, value: 0.0035714285714285713
+\item key: Web Sites as Agents' Environments: General Framework and Applications, value: 0.0017857142857142857
+\item key: Environment Support to the Management of Context Awareness Information, value: 0.0017857142857142857
+\item key: Awareness in collaborative ubiquitous environments: The Multilayered Multi-Agent Situated System approach, value: 0.0017857142857142857
+\item key: Towards a model for ubiquitous and mobile computing, value: 0.0017857142857142857
+\item key: Un libro per Haiti, value: 0.0017857142857142857
+\item key: Substitutional adaptation in case-based reasoning: a general framework applied to P-Truck curing, value: 0.0017857142857142857
+\item key: Modeling dynamic environments in multi-agent simulation, value: 0.0017857142857142857
+\item key: The Role of Knowledge Artifacts in Knowledge Maintenance, value: 0.0017857142857142857
+\item key: Towards a Methodology for Situated Cellular Agent Based Crowd Simulations, value: 0.0017857142857142857
+\item key: Towards hybrid situated agents based virtual environments, value: 0.0017857142857142857
+\item key: Exploiting Knowledge Based Systems to Support Manufacturing of Functional Food Products, value: 0.0017857142857142857
+\item key: Modelling the immune system: the case of situated cellular agents, value: 0.0035714285714285713
+\item key: A Framework for Executing and Visualizing Cellular Agent Based Crowd Simulations, value: 0.0017857142857142857
+\item key: Current Developments and Future Challenges of Coordination in Pervasive Environments, value: 0.0017857142857142857
+\item key: The physiology of love and other writings, value: 0.0017857142857142857
+\item key: An Agent-Based Proxemic Model for Pedestrian and Group Dynamics: Motivations and First Experiments, value: 0.0035714285714285713
+\item key: POP LA NUOVA GRANDE CUCINA ITALIANA, value: 0.0017857142857142857
+\item key: Pedestrian behavior: models, data collection and applications, value: 0.0017857142857142857
+\item key: A framework for execution and 3D visualization of situated cellular agent based crowd simulations, value: 0.0035714285714285713
+\item key: Young Digizen? New cultural challenges in media education, value: 0.0017857142857142857
+\item key: Situated agents interaction: Coordinated change of state for adjacent agents, value: 0.0017857142857142857
+\item key: BASILICATA POTENZA POTENZA UNIVERSITA'DEGLI STUDI DELLA BASILICATA/DAPIT, value: 0.0017857142857142857
+\item key: Decentralised gathering on a discrete field: coupling reaction-diffusion and chemotaxis as social amoebae do, value: 0.0017857142857142857
+\item key: AI/AI 2011: Artificial Intelligence Around Man and Beyond: XIIth International Conference of the Italian Association for Artificial Intelligence, Palermo, Italy, , value: 0.0017857142857142857
+\item key: ANZIANI: QUALIT DELLA VITA E, value: 0.0017857142857142857
+\item key: ANALYSIS OF VARIOUS URBAN GROWTH MODELS BASED ON CELLULAR AUTOMATA, value: 0.0017857142857142857
+\item key: Situated Agents Interaction: Coordinated Change of State for Adjacent Agents, value: 0.0017857142857142857
+\item key: 1. negotiated relations Epigraph, p. 1: The eight-line stanzas placed at the head of each chapter are, value: 0.0017857142857142857
+\item key: Sessualita Narrate, value: 0.0017857142857142857
+\item key: Semantic Querying For An Archeological E-Library, value: 0.0017857142857142857
+\item key: A CA-Based Self-Organized Illumination Facility, value: 0.0035714285714285713
+\item key: The Semantic Web: Research and Applications: 7th Extended Semantic Web Conference, ESWC 2010, Heraklion, Crete, Greece, May 30-June 3, 2010, , value: 0.0017857142857142857
+\item key: Situated Cellular Agents Approach to Crowd Modeling and Simulation, value: 0.0017857142857142857
+\item key: Situated Agents and the Web: Supporting Site Adaptivity, value: 0.0017857142857142857
+\item key: Multi-agent systems as discrete dynamical systems: influences and reactions as a modelling principle, value: 0.0017857142857142857
+\item key: Temporalised epistemic logic for reasoning about agent-based systems| Macquarie University ResearchOnline, value: 0.0017857142857142857
+\item key: Context dependent management of field diffusion: an experimental framework, value: 0.0017857142857142857
+\item key: Situated cellular agents: A model to simulate crowding dynamics, value: 0.0017857142857142857
+\item key: MMASS Approach to Localization Problems, value: 0.0017857142857142857
+\item key: A hybrid agent architecture for situated agents based virtual environments, value: 0.0017857142857142857
+\item key: Il santo del secolo dei lumi: Alfonso de'Liguori (1696-1787), value: 0.0017857142857142857
+\item key: A Multi-Agent System for Remote Psychological Profiling with Role Playing Games Based Tests, value: 0.0017857142857142857
+\item key: A CA-Based Self-organizing Environment: A Configurable Adaptive Illumination Facility, value: 0.0035714285714285713
+\item key: INTERGENERAZIONALE, value: 0.0017857142857142857
+\item key: Towards a Coordination Framework for Pervasive Environments., value: 0.0017857142857142857
+\item key: A model of multi-agent system based on immune evolution, value: 0.0017857142857142857
+\item key: Combining Interface Agents and Situated Agents for Deploying Adaptive Web Applications, value: 0.0017857142857142857
+\item key: A cellular automata-based modular lighting system, value: 0.0017857142857142857
+\item key: CA-based self-organizing environments - The case of a configurable adaptive illumination facility, value: 0.0017857142857142857
+\item key: Situated Cellular Agents and Immune System Modelling, value: 0.0017857142857142857
+\item key: AI* IA 2007: artificial intelligence and human-oriented computing: 10th Congress of the Italian Association for Artificial Intelligence, Rome, Italy, September 10 , value: 0.0017857142857142857
+\item key: Rende (CS), 4th-6th July 2011 University Club University of Calabria, Campus of Arcavacata, Rende (CS), value: 0.0017857142857142857
+\item key: Toward a platform for multi-layered multi-agent situated system (MMASS)-based simulations: focusing on field diffusion, value: 0.0017857142857142857
+\item key: Il nuovo codice dei contratti pubblici di lavori, servizi e forniture: commentario sistematico, value: 0.0017857142857142857
+\item key: Combating implant infections. Remarks by a women's team, value: 0.0017857142857142857
+\item key: Le due zone d'intervento, value: 0.0017857142857142857
+\item key: Pedestrian and crowd dynamics simulation: Testing sca on paradigmatic cases of emerging coordination in negative interaction conditions, value: 0.0017857142857142857
+\item key: Experimenting Situated Cellular Agents in Indoor Scenario: Pedestrian Dynamics during Lecture Hall Evacuation, value: 0.0035714285714285713
+\item key: A Framework for Ontological Description of Archaeological Scientific Publications, value: 0.0017857142857142857
+\item key: Multi-agent systems: Simulation and Applications, value: 0.0017857142857142857
+\item key: AI* IA 2005: advances in artificial intelligence: 9th Congress of the Italian Association for Artificial Intelligence, Milan, Italy, September 21-23, 2005; , value: 0.0017857142857142857
+\item key: Recent advances in design and decision support systems in architecture and urban planning, value: 0.0017857142857142857
+\item key: International symposium on agent based modeling and simulation (ABModSim 2006), University of Vienna, value: 0.0017857142857142857
+\item key: Modelling, Simulating and Visualizing Complex Dynamics with SCA platform, value: 0.0017857142857142857
+\item key: Laboratori del SECONDO ANNO, value: 0.0017857142857142857
+\item key: Romolo Ferrari e la chitarra in Italia nella prima met del Novecento, value: 0.0017857142857142857
+\item key: Une pastorale spectaculaire, value: 0.0017857142857142857
+\item key: Towards an Agent-Based Proxemic Model for Pedestrian and Group Dynamic, value: 0.0017857142857142857
+\item key: Antonello Colonna: un anarchico ai fornelli: da Labico a New York, value: 0.0017857142857142857
+\item key: Progress Report 01 ConsRel, Fapesp Project 2004/14107-2 Logical Consequence and Combinations of LogicsFundaments and Efficient Applications, value: 0.0017857142857142857
+\item key: Models, abstractions and phases in multi-agent based simulation, value: 0.0035714285714285713
+\item key: Special track on Advances in Computer Simulation (ACS): editorial message, value: 0.0035714285714285713
+\item key: Modelling proximal space in urban cellular automata, value: 0.0017857142857142857
+\item key: Service-oriented computing: ICSOC 2005: third international conference, Amsterdam, The Netherlands, December 12-15, 2005: proceedings, value: 0.0017857142857142857
+\item key: Coordinating change of agents' states in situated agents models, value: 0.0035714285714285713
+\item key: CA-based self-organizing environments, value: 0.0017857142857142857
+\item key: Integrated Spatial Assessment (ISA): A Multi-Methodological Approach for Planning Choices, value: 0.0017857142857142857
+\item key: Combining Interface agents and Situated agents for deploying Adaptive Web applications, value: 0.0017857142857142857
+\item key: Dynamic interaction spaces and situated multi-agent systems: from a multi-layered model to a distributed architecture, value: 0.0017857142857142857
+\item key: Towards a General Framework for Substitutional Adaptation in Case-Based Reasoning, value: 0.0017857142857142857
+\item key: Introduction to the special issue: The AgentLink III technical forums, value: 0.0017857142857142857
+\item key: GUEST EDITORIAL: BEST OF AGENT-BASED MODELING AND SIMULATION(ABModSim), value: 0.0017857142857142857
+\item key: Fauna Etvetica, value: 0.0017857142857142857
+\item key: What Do We Mean by Asynchronous CA? A Reflection on Types and Effects of Asynchronicity, value: 0.0017857142857142857
+\item key: Notizie per lnno 1808. dedicate all?... Cardinale Antonio Despuig y Dameto del titolo di S. Calisto, e Arciprete della Patriarcale Basilica di S. Maria , value: 0.0017857142857142857
+\item key: Artificial Societies in a Community-Based Approach to Ambient Intelligence, value: 0.0017857142857142857
+\item key: WWW in the Small, value: 0.0035714285714285713
+\item key: Models, Abstractions and Phases in Multi-Agent Based Simulation, value: 0.0017857142857142857
+\item key: Supporting Action-at-a-distance in Situated Cellular Agents, value: 0.0017857142857142857
+\item key: Introducing Girolamo Pesci, value: 0.0017857142857142857
+\item key: An Ontology Driven Web Site and its Application in the Archaeological Context, value: 0.0017857142857142857
+\item key: Gradient Field Based Order Assignment in AGV Systems, value: 0.0017857142857142857
+\item key: La scelta del corpo e la costruzione dell'identit. Una lettura etnografica di esperienze della transizione di genere, value: 0.0017857142857142857
+\item key: GUEST EDITORIAL: BEST OF AGENT BASED MODELLING AND SIMULATION 2010(ABModSim-3), value: 0.0017857142857142857
+\item key: Dipartimento di Informatica e Scienze dell'Informazione, value: 0.0017857142857142857
+\item key: Advances in Case-based Reasoning: 7th European Conference, ECCBR 2004, Madrid, Spain, August 30-September 2, 2004: Proceedings, value: 0.0017857142857142857
+\item key: A Framework for Execution and Visualization of Situated Agents Based Virtual Environments, value: 0.0017857142857142857
+\item key: GIS and remote sensing to study urban-rural transformation during a fifty-year period, value: 0.0017857142857142857
+\item key: I FRATELLI PLUTINO EI GRECANICI NEL RISORGIMENTO, value: 0.0017857142857142857
+\item key: WI'09 and IAT'09 Conference Organization, value: 0.0017857142857142857
+\item key: Towards a Model for Ubiquitous and Mobile Computing, value: 0.0017857142857142857
+\item key: A System Supporting Users of Cultural Resource Management Semantic Portals, value: 0.0017857142857142857
+\item key: Das rojos, verano negro", value: 0.0017857142857142857
+\end{itemize}
+pure_index: 0.5464285714285698

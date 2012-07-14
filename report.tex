@@ -1,0 +1,93 @@
+\title{Relazione di ``Sistemi complessi: modelli e simulazione''}
+\author{
+	Simon Vocella \\
+	Matricola: 718289
+}
+\date{\today}
+
+\documentclass[12pt]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage[italian]{babel}
+\usepackage{booktabs}
+\usepackage{algorithm}% http://ctan.org/pkg/algorithm
+\usepackage{algpseudocode}% http://ctan.org/pkg/algorithmicx
+\usepackage{algorithmicx}
+\usepackage{lipsum}% http://ctan.org/pkg/lipsum
+\usepackage{float}% http://ctan.org/pkg/float
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+
+\usepackage{listings}
+\lstset{language=Java, basicstyle=\small}
+\lstset{linewidth=\textwidth, showstringspaces=false}
+\lstset{frame=trBL}
+
+\begin{document}
+\maketitle
+
+\section{Il problema}
+Al giorno d'oggi esistono molti sistemi di catalogazione dei paper scientifici (ex. DBLP), il nostro programma si propone di fare scraping in due o più di questi sistemi, con ovviamente dello scraping ad-hoc dipendente da come è strutturato il sito, e cercare una sorta di gruppi comuni di articoli scientifici tra due o più siti di catalogazione e i paper differenti.
+
+\section{Sorgenti informative utilizzate}
+In questo progetto di è deciso di utilizzare i seguenti sistemi di catalogazione:
+\begin{itemize}
+\item DBLP (http://www.informatik.uni-trier.de/~ley/db/)
+\item Google scholar (http://scholar.google.it/)
+\end{itemize}
+
+\section{Approccio e metriche adottate}
+Eiste un sistema centrale che comunica ai vari agenti cosa bisogna cercare. Ogni agente è specializzato in un sistema di catalogazione diverso. Nel nostro caso avremo due agenti. L'agente far\`a scraping nel proprio sito e ritornerà i risultati al sistema centrale. Man mano che ogni agente consegna i propri risultati, viene creata una lista $<Key, Value>$ in cui la $Key$ sar\`a il titolo del paper j-esimo e $Value$ sar\`a uguale a $\displaystyle\sum\limits_{i=0}^n i(j)/(n*m)$ dove $i(j)$ sar\`a uguale a 1 nel caso i-esimo agente al j-esimo paper, altrimenti 0 e m e n sono rispettivamente il numero dei paper trovati in totale e il numero degli agenti.\\
+L'indice di purezza sar\`a la sommatoria dei vari $Value$ $\displaystyle\sum\limits_{j=0}^m Value(j) = \displaystyle\sum\limits_{j=0}^m \displaystyle\sum\limits_{i=0}^n i(j)/(n*m)$, in questo caso l'indice ci indica quanto le n liste raccolte dagli n agenti siano simili. \\\\
+Nel caso in cui $\displaystyle\sum\limits_{i=0}^n i(j)/(n*m) = 1/m$ allora qualsiasi agente ha trovato il paper j-esimo.\\
+Nel caso in cui l'indice di purezza sia $\displaystyle\sum\limits_{j=0}^m Value(j) = \displaystyle\sum\limits_{j=0}^m \displaystyle\sum\limits_{i=0}^n i(j)/(n*m) = 1$, ci indica che le n liste di paper raccolte dagli n agenti sono identiche.\\
+
+\section{Architettura del sistema}
+DOMANDA: descrivo che ho eliminato il livello di python? \\
+DOMANDA2: devo listare i programmi? \\
+\\
+Il sistema \`e basato su quattro livelli diversi. Inizialmente abbiamo un piano di controllo basato su Jason che chiameremo Librarian. Librarian si prende l'onere di chiedere all'utente cosa vuole cercare, tramite una gui in Swing e poi comunica il termine da ricercare ai due agenti Dblp e Scholar. Il nome \`e abbastanza esplicativo sul loro tipo di specializzazione. Ogni agente comunica un azione interna di $scraping.get\_information$ che comunica ad un interfaccia ad hoc di scraping chiamata Session. Session si preoccupa, una volta istanziata, di far partire un webkit modificato che rimane in ascolto su una porta specificata o di default che chiameremo per semplicit\`a Webkit. Tramite Session comunichiamo le nostre azioni di visita al Webkit e tramite xpath manipoliamo il DOM della pagina e tramite funzioni di QT o Javascript manipoliamo funzioni come il submit, click o history, etc. \\
+Ogni agente esegue il proprio scraping e manipola le pagine che visita per raccogliere informazioni (nel nostro caso i titoli dei paper), lo fa su una sola pagina nel caso di DBLP o su più pagine nel caso di Google Scholar.\\
+Una volta ricevuti i risultati, l'azione interna restituisce o meglio unifica (visto che parliamo di linguaggio funzionale) il risultato come una stringa e poi viene restituito all'oggetto Librarian. \\
+Librarian si occuperà di raccogliere i paper in un HashMap e di calcolare incrementalmente l'indice di purezza. \\
+Una volta che tutti gli agenti hanno restituito i loro risultati e Librarian ha calcolato completamente l'indice di purezza, Librarian mostra i risulati e chiude il programma. 
+
+\section{Descrizione dei risultati}
+DOMANDA: devo fare qualche screenshot? \\
+
+Risultati dell'agente Dblp:
+\begin{itemize}
+\item An analysis of different types and effects of asynchronicity in cellular automata update schemes
+\item Towards an agent-based proxemic model for pedestrian and group dynamics: motivations and first experiments
+\item An Agent Model of Pedestrian and Group Dynamics: Experiments on Group Cohesion
+\item An Agent-Based Proxemic Model for Pedestrian and Group Dynamics: Motivations and First Experiments
+\item A Cellular Automata Based Model for Pedestrian and Group Dynamics: Motivations and First Experiments
+\item ... etc.
+\end{itemize}
+
+Risultati dell'agente Scholar:
+\begin{itemize}
+\item Modeling dynamic environments in multi-agent simulation
+\item Situated cellular agents: A model to simulate crowding dynamics
+\item Situated cellular agents approach to crowd modeling and simulation
+\item Awareness in collaborative ubiquitous environments: The multilayered multi-agent situated system approach
+\item Toward a platform for multi-layered multi-agent situated system (MMASS)-based simulations: focusing on field diffusion
+\item ... etc.
+\end{itemize}
+
+Hashmap risultante:
+\begin{itemize}
+\item key: Web Intelligence and Intelligent Agent Technology. Proceedings of the 2009 IEEE/WIC/ACM International Conference on Web Intelligence, Worshops, value: 0.0017857142857142857
+\item key: Visualization of Discrete Crowd Dynamics in a 3D Environment, value: 0.0017857142857142857
+\item key: PASSIONE STORICA E STORIA CIVICA NELLA CALABRIA NORDOCCIDENTALE. RASSEGNA BIBLIOGRAFICA E RIFLESSIONI STORIOGRAFICHE, value: 0.0017857142857142857
+\item key: Le memorie del vecchio maresciallo, value: 0.0017857142857142857
+\item key: Bio-ICT Convergence: Filling the Gap Between Computer Science and Biology, value: 0.0017857142857142857
+\item ... etc.
+\end{itemize}
+
+Indice di purezza risultante: 0.5464285714285698.
+
+\section{Conclusioni}
+Come abbiamo visto le due liste di risultati differiscono per un buon numero di paper, in questo caso \`e colpa di Scholar che mette molti altri risultati oltre agli articoli scientifici (un es. \`e PASSIONE STORICA E STORIA CIVICA NELLA CALABRIA NORDOCCIDENTALE. RASSEGNA BIBLIOGRAFICA E RIFLESSIONI STORIOGRAFICHE, value: 0.0017857142857142857, che non mi sembra molto ad avere a che fare con l'informatica). Si potrebbe migliorare il risultato, aumentando il numero dei siti di catalogazione da visitare, cos\`i riducendo il peso di Scholar da 1/2 a 1/n dove n è il numero dei siti scelti.
+
+\end{document}
