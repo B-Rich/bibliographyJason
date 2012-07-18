@@ -1,14 +1,19 @@
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map.Entry;
 
 import jason.architecture.*;
 import jason.asSemantics.ActionExec;
+import jason.asSemantics.Unifier;
 import jason.asSyntax.ASSyntax;
 import jason.asSyntax.Literal;
+import jason.asSyntax.ObjectTerm;
+import jason.asSyntax.ObjectTermImpl;
+import jason.asSyntax.VarTerm;
 
 import javax.swing.*;
 
@@ -19,15 +24,16 @@ public class LibrarianGUI extends AgArch {
     JTextField jf;
     JFrame    f;
     JButton search;
-    HashMap<String, String> results;
+    HashMap<String, Object> results;
     HashMap<String, Double> papers;
+    HashMap<String, ArrayList<String>> citationsFromScholar;
     int numberAgents;
 
     public LibrarianGUI() {
         jt = new JTextArea(10, 30);
         jf = new JTextField(10);
         
-        results = new HashMap<String, String>();
+        results = new HashMap<String, Object>();
         papers = new HashMap<String, Double>();
         numberAgents = 0;
         
@@ -58,7 +64,7 @@ public class LibrarianGUI extends AgArch {
         if (action.getActionTerm().getFunctor().startsWith("show_index")) {
             jt.append("show index\n");
             
-            for(Entry<String, String> entry : results.entrySet()) {
+            for(Entry<String, Object> entry : results.entrySet()) {
             	jt.append("-------------------------------\n");
             	jt.append("agent: "+entry.getKey()+"\n");
             	jt.append("result: "+entry.getValue()+"\n");
@@ -83,27 +89,42 @@ public class LibrarianGUI extends AgArch {
             
             search.setEnabled(true); // enable GUI button
         } else if (action.getActionTerm().getFunctor().startsWith("get_index")) {
-        	String agent = "" + action.getActionTerm().getTerm(0);
-        	String result = "" + action.getActionTerm().getTerm(2);
+        	String agent = ((VarTerm) action.getActionTerm().getTerm(0)).toStringAsTerm();
+        	Object result = ((ObjectTerm) action.getActionTerm().getTerm(2)).getObject();
         	
-        	jt.append("get index for "+agent+"\n");
-        	
-        	numberAgents += 1;
-        	
-        	results.put(agent, result);
-        	
-        	for(String paper : result.split("!!!")) {
-        		paper = paper.trim();
-        		Double value = papers.get(paper);
-        		
-        		if(value == null) {
-        			value = 0.0;
-        		}
-        		
-        		papers.put(paper, value+1.0);
+        	if(agent.equals("scholar")) {
+        		citationsFromScholar = (HashMap<String, ArrayList<String>>) ((ObjectTerm) action.getActionTerm().getTerm(3)).getObject();
         	}
         	
-        	action.setResult(true);
+        	if(result instanceof ArrayList<?>) {
+        		ArrayList<String> papersFromAgent = (ArrayList<String>) result;
+        		
+	        	jt.append("get index for "+agent+"\n");
+	        	
+	        	numberAgents += 1;
+	        	
+	        	results.put(agent, result);
+	        	
+	        	for(String paper : papersFromAgent) {
+	        		paper = paper.trim();
+	        		Double value = papers.get(paper);
+	        		
+	        		if(value == null) {
+	        			value = 0.0;
+	        		}
+	        		
+	        		papers.put(paper, value+1.0);
+	        	}
+	        	
+	        	action.setResult(true);
+        	} else {
+        		action.setFailureReason(Literal.LFalse, "result is not ArrayList");
+        		action.setResult(true);
+        	}
+        	
+        	feedback.add(action);
+        } else if(action.getActionTerm().getFunctor().startsWith("show_filtered_citations")) {
+    		action.setResult(true);
             feedback.add(action);
         } else {
         	super.act(action,feedback); // send the action to the environment to be performed.

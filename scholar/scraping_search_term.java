@@ -25,7 +25,6 @@ public class scraping_search_term extends DefaultInternalAction {
 		
 		String search_term = ((StringTerm) args[0]).getString();
 		
-		Session s = new Session("50001");
 		ArrayList<String> papers = new ArrayList<String>();
 		HashMap<String, ArrayList<String>> citations = new HashMap<String, ArrayList<String>>();
 		
@@ -35,10 +34,13 @@ public class scraping_search_term extends DefaultInternalAction {
 			
 			ArrayList<String> citationsLocal = new ArrayList<String>();
 			citationsLocal.add("citazione1");
+			citationsLocal.add("citazione2");
+			citationsLocal.add("citazione3");
 			
 			citations.put("prova1", citationsLocal);
 		} else {
 			String base_url = "http://scholar.google.it";
+			Session s = new Session("50001");
 			
 			try {
 				s.setErrorTolerance(true);

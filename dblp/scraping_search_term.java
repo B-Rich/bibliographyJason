@@ -24,13 +24,13 @@ public class scraping_search_term extends DefaultInternalAction {
 		
 		String search_term = ((StringTerm) args[0]).getString();
 		
-		Session s = new Session("50002");
 		ArrayList<String> papers = new ArrayList<String>();
 		
 		if(DEBUG) {
 			papers.add("prova1");
 			papers.add("prova3");
 		} else {
+			Session s = new Session("50002");
 			String base_url = "http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/index.html";
 			
 			try {
