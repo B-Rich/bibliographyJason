@@ -25,6 +25,10 @@ public class Node {
 		return w.sendCommand("Node", "text", node_id);
 	}
 	
+	public String html() throws Exception {
+		return w.sendCommand("Node", "html", node_id);
+	}
+	
 	public ArrayList<Node> xpath(String xpath) throws Exception {
 		String result = this.get_id_by_xpath(xpath);
 		

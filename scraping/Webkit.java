@@ -27,7 +27,7 @@ public class Webkit {
 			
 			command += port;
 			
-			System.out.println("command: "+command);
+			//System.out.println("command: "+command);
 			
 			Runtime.getRuntime().exec(command);
 			
@@ -36,7 +36,7 @@ public class Webkit {
 			socket = new Socket("localhost", Integer.valueOf(port).intValue());
 			in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			out = new PrintStream(socket.getOutputStream(), true);
-			System.out.println("initialized");
+			//System.out.println("initialized");
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
@@ -48,12 +48,12 @@ public class Webkit {
 	
 	
 	public String sendCommand(String cmd, String... args) throws Exception {
-		System.out.println("sendCommand: "+cmd);
-		System.out.println("args: "+args.length);
+		//System.out.println("sendCommand: "+cmd);
+		//System.out.println("args: "+args.length);
 		out.print(cmd+"\n");
 		out.print(String.valueOf(args.length)+"\n");
 		for(String arg : args) {
-			System.out.println("arg: "+arg);
+			//System.out.println("arg: "+arg);
 			out.print(arg.length()+"\n");
 			out.print(arg);
 		}
@@ -61,43 +61,43 @@ public class Webkit {
 	}
 	
 	public String receiveMessage() throws Exception {
-		System.out.println("receiveMessage");
+		//System.out.println("receiveMessage");
 		String result = "";
 		String message = in.readLine();
 		
-		System.out.println("msg: "+message);
+		//System.out.println("msg: "+message);
 		
 		if(!message.equals("ok"))
 			throw new Exception("Invalid message");
 		
 		message = in.readLine();
-		System.out.println("message: "+message);
+		//System.out.println("message: "+message);
 		
 		int length = Integer.valueOf(message);
-		System.out.println("length: "+length);
+		//System.out.println("length: "+length);
 		
 		/*int length = Integer.valueOf(message.substring(0, 1));
-		System.out.println("length: "+length);
+		//System.out.println("length: "+length);
 		
 		if(length > 0) {
 			result += message.substring(1);
 			length -= message.length() - 1;
-			System.out.println("length: "+length);
-			System.out.println("result: "+result);
+			//System.out.println("length: "+length);
+			//System.out.println("result: "+result);
 		}*/
 		
 		char[] buffer = new char[length];
 		int charread = 0;
 		
 		while(length > 0) {
-			System.out.println("read");
+			//System.out.println("read");
 			charread = in.read(buffer, charread, length);
 			length -= charread;
 			result += String.valueOf(buffer).trim();
-			System.out.println("length: "+length);
+			//System.out.println("length: "+length);
 		}
 		
-		System.out.println("return: "+result);
+		//System.out.println("return: "+result);
 				
 		return result;
 	}

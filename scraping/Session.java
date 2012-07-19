@@ -30,7 +30,7 @@ public class Session {
 			return null;
 		}
 		
-		System.out.println("xpath: "+result);
+		//System.out.println("xpath: "+result);
 		String[] node_ids = result.split(",");
 		
 		ArrayList<Node> nodes = new ArrayList<Node>();  
@@ -73,30 +73,30 @@ public class Session {
 			    for(int i=1; i<divs.size(); i++) {
 			    	Node div = divs.get(i);
 			    	ArrayList<Node> page_papers = div.xpath("./*[@class=\"gs_rt\"]/a");
-			        System.out.println("page_papers: "+page_papers);
+			        //System.out.println("page_papers: "+page_papers);
 			        
 			        for(Node page_paper : page_papers) {
 			        	papers.add(page_paper.text());
 			        }
 			        
 			        //ArrayList<Node> citedbies = div.xpath("./*[@class=\"gs_fl\"]/a");
-			        //System.out.println("citedbies: "+citedbies);
+			        ////System.out.println("citedbies: "+citedbies);
 			    }
 			    
-			    System.out.println("npage: "+npage);
+			    //System.out.println("npage: "+npage);
 			    ArrayList<Node> pages = s.xpath("//*[@id=\"gs_n\"]/center/table/tbody/tr/td/a[text()=\""+(npage+1)+"\"]");
-			    System.out.println("pages: "+pages);
+			    //System.out.println("pages: "+pages);
 
 			    if(pages != null && pages.size() > 0) {
 			        String next_page = pages.get(0).get("href");
 			        npage += 1;
 			        new_page = true;
-			        System.out.println("next_page: "+next_page);
+			        //System.out.println("next_page: "+next_page);
 			        s.visit(base_url+next_page);
 			    }
 			}
 			
-			System.out.println("papers: "+papers);
+			//System.out.println("papers: "+papers);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
