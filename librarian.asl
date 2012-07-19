@@ -6,15 +6,6 @@
 // T <- Total
 // CI <- Citations
 
-// 		get_citations_from_scholar(CI_SCHOLAR)
-// 		search_citation(CI_SCHOLAR)
-// +send_filtered_citations(R)[source(S)]: true
-//    <-	.print("send filtered information from DBLP");
-// 		show_filtered_citations(R).
-//-+search_term(ST);
-
-//!start_search(ST). //Initial Goal
-
 /* plans */
 
 +!start_search(ST) : true
