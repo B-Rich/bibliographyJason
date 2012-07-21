@@ -30,7 +30,7 @@
 Al giorno d'oggi esistono molti sistemi di catalogazione dei paper scientifici (ex. DBLP), il nostro programma si propone di fare scraping in due o pi\`u di questi sistemi, con ovviamente dello scraping ad-hoc dipendente da come \`e strutturato il sito, e si propone di risolvere due problemi:
 \begin{itemize}
 \item Calcolare un indice di similarit\`a tra i vari siti
-\item Filtrare i risultati di Google Scholar tramite DBLP
+\item Filtrare le citazioni in Google Scholar tramite DBLP
 \end{itemize}
 
 \section{Sorgenti informative utilizzate}
@@ -41,20 +41,51 @@ In questo progetto di \`e deciso di utilizzare i seguenti sistemi di catalogazio
 \end{itemize}
 
 \section{Approccio e metriche adottate}
-Esiste un sistema centrale che comunica ai vari agenti cosa bisogna cercare. Ogni agente \`e specializzato in un sistema di catalogazione diverso. Nel nostro caso avremo due agenti. L'agente far\`a scraping nel proprio sito e ritorner\`a i risultati al sistema centrale. Man mano che ogni agente consegna i propri risultati, viene creata una lista $<Key, Value>$ in cui la $Key$ sar\`a il titolo del paper j-esimo e $Value$ sar\`a uguale a $\displaystyle\sum\limits_{i=0}^n i(j)/(n*m)$ dove $i(j)$ sar\`a uguale a 1 nel caso i-esimo agente al j-esimo paper, altrimenti 0 e m e n sono rispettivamente il numero dei paper trovati in totale e il numero degli agenti.\\
-L'indice di similarit\`a sar\`a la sommatoria dei vari $Value$ $\displaystyle\sum\limits_{j=0}^m Value(j) = \displaystyle\sum\limits_{j=0}^m \displaystyle\sum\limits_{i=0}^n i(j)/(n*m)$, in questo caso l'indice ci indica quanto le n liste raccolte dagli n agenti siano simili. \\\\
+
+\subsection{Indice di similarit\`a}
+Esiste un sistema centrale che comunica ai vari agenti cosa bisogna cercare. Ogni agente \`e specializzato in un sistema di catalogazione diverso. Nel nostro caso avremo due agenti. Ogni agente far\`a scraping nel proprio sito e ritorner\`a i risultati al sistema centrale. Man mano che ogni agente consegna i propri risultati, viene creata una lista $<Key, Value>$ in cui la $Key$ sar\`a il titolo del paper j-esimo e $Value$ sar\`a uguale a $\displaystyle\sum\limits_{i=0}^n i(j)/(n*m)$ dove $i(j)$ sar\`a uguale a 1 nel caso l'i-esimo agente ha il j-esimo paper, altrimenti 0 e m e n sono rispettivamente il numero dei paper trovati in totale e il numero degli agenti.\\
+L'indice di similarit\`a sar\`a la sommatoria dei vari $Value$, $\displaystyle\sum\limits_{j=0}^m Value(j) = \displaystyle\sum\limits_{j=0}^m \displaystyle\sum\limits_{i=0}^n i(j)/(n*m)$ e in questo caso ci indica quanto le n liste raccolte dagli n agenti siano simili. \\\\
 Nel caso in cui $\displaystyle\sum\limits_{i=0}^n i(j)/(n*m) = 1/m$ allora qualsiasi agente ha trovato il paper j-esimo.\\
 Nel caso in cui l'indice di similarit\`a sia $\displaystyle\sum\limits_{j=0}^m Value(j) = \displaystyle\sum\limits_{j=0}^m \displaystyle\sum\limits_{i=0}^n i(j)/(n*m) = 1$, ci indica che le n liste di paper raccolte dagli n agenti sono identiche.\\
 
+\subsection{Validazione dei paper da Google Scholar}
+\`E notorio che Google Scholar indicizza moltissime voci anche non riguardanti il mondo scientifico, quindi si \`e pensato di filtare le citazioni in Google Scholar tramite un sistema pi\`u rigoroso, DBLP, avendo cos\`i da avere una sorta di validazione.
+Per ogni paper scaricato nel calcolare l'indice di similarit\`a, scarichiamo $k$ citazioni, dove $k >= 0$, e ogni citazione la cerchiamo in DBLP e nel caso viene trovata la validiamo.
+
 \section{Architettura del sistema}
-DOMANDA: descrivo che ho eliminato il livello di python? \\
-DOMANDA2: devo listare i programmi? \\
+Il sistema \`e basato su quattro livelli diversi. Inizialmente abbiamo un piano di controllo basato su Jason (Java-based AgentSpeak interpreter used with SACI for multi-agent distribution over the net) che chiameremo Librarian. Librarian si prende l'onere di chiedere all'utente cosa vuole cercare, tramite una GUI in Swing e poi comunica il termine da ricercare ai due agenti Dblp e Scholar. Il nome \`e abbastanza esplicativo su quale sito di catalogazione cercano.
+\lstinputlisting[caption=Il file MAS: Multiple Agent System,label=lst:java]{bibliography.mas2j} 
+Il file mas2j ci permette di specificare l'architettura del nostro sistema, il tipo di infrastruttura e gli agenti che interagiscono e di che tipo sono.
 \\
-Il sistema \`e basato su quattro livelli diversi. Inizialmente abbiamo un piano di controllo basato su Jason che chiameremo Librarian. Librarian si prende l'onere di chiedere all'utente cosa vuole cercare, tramite una GUI in Swing e poi comunica il termine da ricercare ai due agenti Dblp e Scholar. Il nome \`e abbastanza esplicativo sul loro tipo di specializzazione. Ogni agente comunica un azione interna di $scraping.get\_information$ che comunica ad un interfaccia ad hoc di scraping chiamata Session. Session si preoccupa, una volta istanziata, di far partire un webkit modificato che rimane in ascolto su una porta specificata o di default che chiameremo per semplicit\`a Webkit. Tramite Session comunichiamo le nostre azioni di visita al Webkit e tramite xpath manipoliamo il DOM della pagina e tramite funzioni di QT o Javascript manipoliamo funzioni come il submit, click o history, etc. \\
+\subsection{Infracstructure}
+Un'infrastruttura fornisce i seguenti servizi per i MAS:
+\begin{itemize}
+\item comunicazione (ad esempio, le infrastrutture centralizzate implementano la comunicazione basata su KQML, mente JADE implementa la comunicazione utilizzando FIPA-ACL)
+\item il controllo del ciclo di vita dell'agente (creazione, l'esecuzione, distruzione)
+\end{itemize}
+Sono disponibili le seguenti infrastrutture:
+\begin{itemize}
+\item  centralizzata: \\ Questa infrastruttura esegue tutti gli agenti nello stesso host. Esso fornisce prestazioni di avvio veloce e alta per i sistemi che possono essere eseguite in un singolo computer. \`E  anche utile per testare e sviluppare (prototipi) sistemi. \`E l'infrastruttura di default.
+\item Jade: \\ Fornisce la distribuzione e la comunicazione con Jade, che si basa su FIPA-ACL. Con questa infrastruttura, tutti gli strumenti disponibili con JADE sono disponibili anche per monitorare e controllare gli agenti Jason.
+\end{itemize}
+\subsection{Librarian}
+\lstinputlisting[caption=L'agente Librarian,label=lst:java]{librarian.asl}
+\newpage
+\lstinputlisting[caption=Architettura LibrarianGUI,label=lst:java]{LibrarianGUI.java}
+L'agente Librarian \`e definito nel file asl e grazie al fatto che nel file mas2j sia stata definita la propriet\`a $agentArchclass LibrarianGUI$ definiamo che l'architettura dell'agente \`e definita nel file LibrarianGUI.java. \\
+Tramite GUI, l'utente pu\`o ricercare un qualsiasi autore dentro i siti di catalogazione, questo lancer\`a all'interno dell'agente Librarian una chiamata $search\_term$ ad ogni agente. \\
+
+\subsection{DBLP e Scholar}
+All'azione di $search\_term$ ogni agente comunica un azione interna di $<Agent>.scraping\_search\_term$ che comunica il termine ad un azione interna.
+\lstinputlisting[caption=L'agente Scholar,label=lst:java]{scholar.asl}
+\lstinputlisting[caption=Azione interna di scraping di Scholar,label=lst:java]{scholar/scraping_search_term.java}
+\lstinputlisting[caption=L'agente Dblp,label=lst:java]{dblp.asl}
+\lstinputlisting[caption=Azione interna di scraping Dblp,label=lst:java]{dblp/scraping_search_term.java}
+Come vediamo ogni azione interna comunica ad un interfaccia ad hoc di scraping chiamata Session. Session si preoccupa, una volta istanziata, di far partire un webkit modificato che rimane in ascolto su una porta specificata o di default che chiameremo per semplicit\`a Webkit. Tramite Session comunichiamo le nostre azioni di visita al Webkit e tramite xpath manipoliamo il DOM della pagina e tramite funzioni di QT o Javascript manipoliamo funzioni come il submit, click o history, etc. \\
 Ogni agente esegue il proprio scraping e manipola le pagine che visita per raccogliere informazioni (nel nostro caso i titoli dei paper), lo fa su una sola pagina nel caso di DBLP o su pi\`u pagine nel caso dii Google Scholar.\\
 Una volta ricevuti i risultati, l'azione interna restituisce o meglio unifica (visto che parliamo di linguaggio funzionale) il risultato come una stringa e poi viene restituito all'oggetto Librarian. \\
 Librarian si occuper\`a di raccogliere i paper in un HashMap e di calcolare incrementalmente l'indice di similarit\`a. \\
-Una volta che tutti gli agenti hanno restituito i loro risultati e Librarian ha calcolato completamente l'indice di similarit\`a, Librarian mostra i risulati e chiude il programma. 
+Una volta che tutti gli agenti hanno restituito i loro risultati, Librarian calcola completamente l'indice di similarit\`a.
 
 \section{Descrizione dei risultati}
 DOMANDA: devo fare qualche screenshot? \\
