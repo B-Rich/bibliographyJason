@@ -54,7 +54,7 @@ Per ogni paper scaricato nel calcolare l'indice di similarit\`a, scarichiamo $k$
 
 \section{Architettura del sistema}
 Il sistema \`e basato su quattro livelli diversi. Inizialmente abbiamo un piano di controllo basato su Jason (Java-based AgentSpeak interpreter used with SACI for multi-agent distribution over the net) che chiameremo Librarian. Librarian si prende l'onere di chiedere all'utente cosa vuole cercare, tramite una GUI in Swing e poi comunica il termine da ricercare ai due agenti Dblp e Scholar. Il nome \`e abbastanza esplicativo su quale sito di catalogazione cercano.
-\lstinputlisting[caption=Il file MAS: Multiple Agent System,label=lst:java]{bibliography.mas2j} 
+\lstinputlisting[caption=Il file MAS: Multiple Agent System,label=lst:java]{../bibliography.mas2j}
 Il file mas2j ci permette di specificare l'architettura del nostro sistema, il tipo di infrastruttura e gli agenti che interagiscono e di che tipo sono.
 \\
 \subsection{Infracstructure}
@@ -69,26 +69,28 @@ Sono disponibili le seguenti infrastrutture:
 \item Jade: \\ Fornisce la distribuzione e la comunicazione con Jade, che si basa su FIPA-ACL. Con questa infrastruttura, tutti gli strumenti disponibili con JADE sono disponibili anche per monitorare e controllare gli agenti Jason.
 \end{itemize}
 \subsection{Librarian}
-\lstinputlisting[caption=L'agente Librarian,label=lst:java]{librarian.asl}
-\newpage
-\lstinputlisting[caption=Architettura LibrarianGUI,label=lst:java]{LibrarianGUI.java}
+\lstinputlisting[caption=L'agente Librarian,label=lst:java]{../librarian.asl}
+\lstinputlisting[caption=Architettura LibrarianGUI,label=lst:java]{../LibrarianGUI.java}
 L'agente Librarian \`e definito nel file asl e grazie al fatto che nel file mas2j sia stata definita la propriet\`a $agentArchclass LibrarianGUI$ definiamo che l'architettura dell'agente \`e definita nel file LibrarianGUI.java. \\
 Tramite GUI, l'utente pu\`o ricercare un qualsiasi autore dentro i siti di catalogazione, questo lancer\`a all'interno dell'agente Librarian una chiamata $search\_term$ ad ogni agente. \\
 
 \subsection{DBLP e Scholar}
 All'azione di $search\_term$ ogni agente comunica un azione interna di $<Agent>.scraping\_search\_term$ che comunica il termine ad un azione interna.
-\lstinputlisting[caption=L'agente Scholar,label=lst:java]{scholar.asl}
-\lstinputlisting[caption=Azione interna di scraping di Scholar,label=lst:java]{scholar/scraping_search_term.java}
-\lstinputlisting[caption=L'agente Dblp,label=lst:java]{dblp.asl}
-\lstinputlisting[caption=Azione interna di scraping Dblp,label=lst:java]{dblp/scraping_search_term.java}
+\lstinputlisting[caption=L'agente Scholar,label=lst:java]{../scholar.asl}
+\lstinputlisting[caption=Azione interna di scraping di Scholar,label=lst:java]{../scholar/scraping_search_term.java}
+\lstinputlisting[caption=L'agente Dblp,label=lst:java]{../dblp.asl}
+\lstinputlisting[caption=Azione interna di scraping Dblp,label=lst:java]{../dblp/scraping_search_term.java}
 Come vediamo ogni azione interna comunica ad un interfaccia ad hoc di scraping chiamata Session. Session si preoccupa, una volta istanziata, di far partire un webkit modificato che rimane in ascolto su una porta specificata o di default che chiameremo per semplicit\`a Webkit. Tramite Session comunichiamo le nostre azioni di visita al Webkit e tramite xpath manipoliamo il DOM della pagina e tramite funzioni di QT o Javascript manipoliamo funzioni come il submit, click o history, etc. \\
 Ogni agente esegue il proprio scraping e manipola le pagine che visita per raccogliere informazioni (nel nostro caso i titoli dei paper), lo fa su una sola pagina nel caso di DBLP o su pi\`u pagine nel caso dii Google Scholar.\\
 Una volta ricevuti i risultati, l'azione interna restituisce o meglio unifica (visto che parliamo di linguaggio funzionale) il risultato come una stringa e poi viene restituito all'oggetto Librarian. \\
 Librarian si occuper\`a di raccogliere i paper in un HashMap e di calcolare incrementalmente l'indice di similarit\`a. \\
 Una volta che tutti gli agenti hanno restituito i loro risultati, Librarian calcola completamente l'indice di similarit\`a.
 
+\subsection{Raccogliere e validare le citazioni}
+Ora ci proponiamo di filtrare le citazioni raccolte in Google Scholar in DBLP. L'agente Scholar, durante l'azione $scholar.scraping\_search\_term$ raccoglie anche le citazioni di ogni paper (se ne ha) e viene tutto resituito a Librarian. Librarian si occuper\`a di rigirare la richiesta di validazione delle citazioni e contatter\`a l'agente dblp tramite l'azione $validate\_citation$, in cui si passer\`a a un azione interna $dblp.scraping\_search\_citation$ che infine resituir\`a i risultati a Librarian tramite $send\_filtered\_citations$.
+\lstinputlisting[caption=Azione interna di search citation di Dblp,label=lst:java]{../dblp/scraping_search_citation.java}
+
 \section{Descrizione dei risultati}
-DOMANDA: devo fare qualche screenshot? \\
 
 Risultati dell'agente Dblp:
 \begin{itemize}
@@ -119,10 +121,14 @@ Hashmap risultante:
 \item key: Bio-ICT Convergence: Filling the Gap Between Computer Science and Biology, value: 0.0017857142857142857
 \item ... etc.
 \end{itemize}
-
-Indice di similarit\`a risultante: 0.5464285714285698.
+Indice di similarit\`a risultante: 0.5464285714285698. \\
+\\
+Citazioni trovate:
+{Agent based modeling and simulation: an informatics perspective=[Modeling \& simulation of educational multi-agent systems in DEVS-suite, The roundtable: an abstract model of conversation dynamics, Looking at the effects of performance-based financing through a complex adaptive systems lens, The Roundtable: An Agent-Based Model of Conversation Dynamics, Participatory Agent-Based Simulation for Renewable Resource Management: The Role of the Cormas Simulation Platform to Nurture a Community of Practice, Distributed Agent-Based Social Simulations: An architecture to simulate complex social phenomena on highly parallel computational environments, Distributed Agent-Based Social Simulations: An Architecture to Simulate Complex Social Phenomena on Highly Parallel Computational Environments, SimConnector: An approach to testing disaster-alerting systems using agent based simulation models, IMITATIONAL MODELING OF BEHAVIOR OF LEARNING ECONOMIC AGENTS], Coordinated change of state for situated agents=[Dynamic interaction spaces and situated multi-agent systems: from a multi-layered model to a distributed architecture], Towards an agent-based proxemic model for pedestrian and group dynamic=[Agent-based Proxemic Dynamics: Crowd and Groups Simulation, Exitus: An Agent-Based Evacuation Simulation Model For Heterogeneous Populations, A Cellular Automata Model for Pedestrian and Group Dynamics, Agent-Based Pedestrian Modeling and Simulation, Dealing with crowd crystals in MAS-based crowd simulation: a proposal, An Agent-Based Approach to Pedestrian and Group Dynamics: Experimental and Real World Scenarios], Situated cellular agents and immune system modelling=[A model of multi-agent system based on immune evolution, Supporting the application of Situated Cellular Agents in non-uniform spaces, A Multi-Agent-based 3D Visualization of Stem Cell Behavior], A CA-Based Approach to Self-Organized Adaptive Environments: The Case of an Illumination Facility=[Modeling and programming asynchronous automata networks: The MOCA approach], An Asynchronous Cellular Automata-Based Adaptive Illumination Facility=[Simulation of alternative self-organization models for an adaptive environment, Self-organization models for adaptive environments: Envisioning and evaluation of alternative approaches, Design and Implementation of a Framework for the Interconnection of Cellular Automata in Software and Hardware], etc.. \\\\
+Per ogni citazione viene verificato se esiste o meno ricercandola in DBLP. Nel caso in cui la ricerca No hits, allora la citazione viene eliminata.
 
 \section{Conclusioni}
-Come abbiamo visto le due liste di risultati differiscono per un buon numero di paper, in questo caso \`e colpa di Scholar che mette molti altri risultati oltre agli articoli scientifici (un es. \`e PASSIONE STORICA E STORIA CIVICA NELLA CALABRIA NORDOCCIDENTALE. RASSEGNA BIBLIOGRAFICA E RIFLESSIONI STORIOGRAFICHE, value: 0.0017857142857142857, che non mi sembra molto ad avere a che fare con l'informatica). Si potrebbe migliorare il risultato, aumentando il numero dei siti di catalogazione da visitare, cos\`i riducendo il peso di Scholar da 1/2 a 1/n dove n \`e il numero dei siti scelti.
+Come abbiamo visto le due liste di risultati differiscono per un buon numero di paper, in questo caso \`e colpa di Scholar che mette molti altri risultati oltre agli articoli scientifici (un es. \`e PASSIONE STORICA E STORIA CIVICA NELLA CALABRIA NORDOCCIDENTALE. RASSEGNA BIBLIOGRAFICA E RIFLESSIONI STORIOGRAFICHE, value: 0.0017857142857142857, che non mi sembra molto ad avere a che fare con l'informatica). Si potrebbe migliorare il risultato, aumentando il numero dei siti di catalogazione da visitare, cos\`i riducendo il peso di Scholar da 1/2 a 1/n dove n \`e il numero dei siti scelti.\\\\
+Anche nel caso della validazione delle citazioni di Google Scholar, potremmo affidarci anche ad altri siti di catalogazione e non partire dal pressupposto che DBLP \`e l'unico vero oracolo.
 
 \end{document}

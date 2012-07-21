@@ -10,6 +10,7 @@ import jason.asSyntax.Term;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map.Entry;
+import java.util.Scanner;
 
 import scraping.Node;
 import scraping.Session;
@@ -52,6 +53,16 @@ public class scraping_search_term extends DefaultInternalAction {
     Node n = nodes.get(0);
     n.set(search_term);
     n.getForm().submit();
+    
+    //Contromeasures against CAPTCHA
+    String body = s.body();
+    if(body.contains("CAPTCHA")) {
+    	System.out.println("Contromeasures against CAPTCHA, " +
+    			"please enter when you have inserted the CAPTCHA");
+    	Scanner sc = new Scanner(System.in);
+	    while(!sc.nextLine().equals(""));
+    }
+    
     HashMap<String, String> citiedBies = new HashMap<String, String>();
     
     int npage = 1;
@@ -60,10 +71,14 @@ public class scraping_search_term extends DefaultInternalAction {
     while(new_page) {
      new_page = false;
      ArrayList<Node> divs = s.xpath("//*[@class=\"gs_r\"]");
-  
-        for(int i=1; i<divs.size(); i++) {
+     System.out.println("divs: "+divs);
+
+     for(int i=1; i<divs.size(); i++) {
          Node div = divs.get(i);
-         ArrayList<Node> page_papers = div.xpath("./*[@class=\"gs_rt\"]/a");
+         System.out.println("div: "+div.html());
+         ArrayList<Node> page_papers = div.xpath("./descendant::" +
+         		"*[@class=\"gs_rt\"]/a");
+         System.out.println("page_papers: "+page_papers);
          
          if(page_papers != null) {
              for(Node page_paper : page_papers) {
@@ -79,6 +94,8 @@ public class scraping_search_term extends DefaultInternalAction {
                
                if(citedbiesPaperUrl.contains("cites=")) {
                 citiedBies.put(paperTitle, citedbiesPaperUrl);
+                System.out.println("citedbiesPaperUrl: "+citedbiesPaperUrl
+                		+" added for "+paperTitle);
                }
               }
              }
@@ -92,7 +109,6 @@ public class scraping_search_term extends DefaultInternalAction {
             String next_page = pages.get(0).get("href");
             npage += 1;
             new_page = true;
-            System.out.println("next_page: "+next_page);
             s.visit(base_url+next_page);
         }
     }
@@ -110,7 +126,8 @@ public class scraping_search_term extends DefaultInternalAction {
    
          for(int i=1; i<divs.size(); i++) {
           Node div = divs.get(i);
-          ArrayList<Node> page_papers = div.xpath("./*[@class=\"gs_rt\"]/a");
+          ArrayList<Node> page_papers = div.xpath("./descendant::" +
+         		"*[@class=\"gs_rt\"]/a");
           
           if(page_papers != null) {
               for(Node page_paper : page_papers) {
@@ -128,14 +145,17 @@ public class scraping_search_term extends DefaultInternalAction {
              String next_page = pages.get(0).get("href");
              npage += 1;
              new_page = true;
-             System.out.println("next_page: "+next_page);
              s.visit(base_url+next_page);
          }
      }
      
-     citations.put(citiedBy.getKey(), papersThatCite);
+     if(papersThatCite.size() > 0) {
+      citations.put(citiedBy.getKey(), papersThatCite);
+      System.out.println("citations: "+citations);
+     }
     }
     
+    System.out.println("citations: "+citations);
     System.out.println("papers: "+papers);
    } catch (Exception e) {
     e.printStackTrace();

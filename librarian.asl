@@ -23,7 +23,7 @@
    		get_index(S, ST, R, CI);
    		+finish_first_search(S);
 		.print("search_citation in DBLP ", CI);
-		.send(dblp, tell, search_citation(CI));
+		.send(dblp, tell, validate_citation(CI));
 		.abolish(send_information(_,_,_)).
 		
 +finish_first_search(S): count(C, T) & C < T-1

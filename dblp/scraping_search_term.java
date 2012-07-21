@@ -42,7 +42,6 @@ public class scraping_search_term extends DefaultInternalAction {
     n.set(search_term);
     n.getForm().submit();
     
-    
     ArrayList<Node> trs = s.xpath("//p[1]/table/tbody/tr");
   
     for(Node tr : trs) {

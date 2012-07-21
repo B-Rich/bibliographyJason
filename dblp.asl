@@ -5,8 +5,8 @@
    		dblp.scraping_search_term(ST, R);
    		.send(S, tell, send_information_dblp(ST, R)).
    		
-+search_citation(CI)[source(S)] : true
-    <- 	.print("search citation DBLP");
++validate_citation(CI)[source(S)] : true
+    <- 	.print("validate citation in DBLP");
     	dblp.scraping_search_citation(CI, R);
     	.print("result: ", R);
         .send(S, tell, send_filtered_citations(R)).

@@ -23,6 +23,10 @@ public class Session {
 		w.sendCommand("Visit", url);
 	}
 	
+	public String body() throws Exception {
+		return w.sendCommand("Body");
+	}
+	
 	public ArrayList<Node> xpath(String xpath) throws Exception {
 		String result = this.get_id_by_xpath(xpath);
 		
