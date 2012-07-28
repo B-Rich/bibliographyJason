@@ -73,7 +73,7 @@ public class scraping_search_term extends DefaultInternalAction {
      ArrayList<Node> divs = s.xpath("//*[@class=\"gs_r\"]");
      System.out.println("divs: "+divs);
 
-     for(int i=1; i<divs.size(); i++) {
+     for(int i=0; i<divs.size(); i++) {
          Node div = divs.get(i);
          System.out.println("div: "+div.html());
          ArrayList<Node> page_papers = div.xpath("./descendant::" +
@@ -124,7 +124,7 @@ public class scraping_search_term extends DefaultInternalAction {
       new_page = false;
       ArrayList<Node> divs = s.xpath("//*[@class=\"gs_r\"]");
    
-         for(int i=1; i<divs.size(); i++) {
+         for(int i=0; i<divs.size(); i++) {
           Node div = divs.get(i);
           ArrayList<Node> page_papers = div.xpath("./descendant::" +
          		"*[@class=\"gs_rt\"]/a");
@@ -162,7 +162,7 @@ public class scraping_search_term extends DefaultInternalAction {
    }
   }
         
-        return un.unifies(args[1], new ObjectTermImpl(papers)) 
-        		&& un.unifies(args[2], new ObjectTermImpl(citations));
-    }
+  return un.unifies(args[1], new ObjectTermImpl(papers)) 
+    && un.unifies(args[2], new ObjectTermImpl(citations));
+ }
 }

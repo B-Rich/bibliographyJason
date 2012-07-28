@@ -85,8 +85,20 @@ Una volta avuti i risultati, l'azione interna restituisce o meglio unifica (vist
 Le azioni interne, in Jason, sono molto importanti, perch\`e sono le uniche che posso cambiare l'ambiente e le variabili di esecuzione. \\ 
 Librarian si occuper\`a di raccogliere i paper in una HashMap e di calcolare incrementalmente l'indice di similarit\`a. 
 
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{search_terms.eps}
+\caption{Collaboration Diagram della ricerca}
+\end{figure}
+
 \subsection{Raccogliere e validare le citazioni}
 Ora ci proponiamo di validare le citazioni raccolte in Google Scholar grazie a DBLP. L'agente Scholar, durante l'azione $scholar.scraping\_search\_term$ raccoglie anche le citazioni di ogni paper (se ne ha). Librarian si occuper\`a di rigirare la richiesta di validazione delle citazioni e contatter\`a l'agente dblp tramite l'azione $validate\_citation$, in cui si passer\`a a un azione interna $dblp.scraping\_search\_citation$ che infine resituir\`a i risultati a Librarian tramite $send\_filtered\_citations$.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{search_citation.eps}
+\caption{Collaboration Diagram della validazione delle citazioni}
+\end{figure}
+\newpage
 \lstinputlisting[caption=Azione interna di search citation di Dblp,label=lst:java]{../dblp/scraping_search_citation.java}
 
 \section{Descrizione dei risultati}
@@ -121,7 +133,57 @@ Hashmap risultante:
 Indice di similarit\`a risultante: 0.5464285714285698. \\
 \\
 Citazioni trovate:
-{Agent based modeling and simulation: an informatics perspective=[Modeling \& simulation of educational multi-agent systems in DEVS-suite, The roundtable: an abstract model of conversation dynamics, Looking at the effects of performance-based financing through a complex adaptive systems lens, The Roundtable: An Agent-Based Model of Conversation Dynamics, Participatory Agent-Based Simulation for Renewable Resource Management: The Role of the Cormas Simulation Platform to Nurture a Community of Practice, Distributed Agent-Based Social Simulations: An architecture to simulate complex social phenomena on highly parallel computational environments, Distributed Agent-Based Social Simulations: An Architecture to Simulate Complex Social Phenomena on Highly Parallel Computational Environments, SimConnector: An approach to testing disaster-alerting systems using agent based simulation models, IMITATIONAL MODELING OF BEHAVIOR OF LEARNING ECONOMIC AGENTS], Coordinated change of state for situated agents=[Dynamic interaction spaces and situated multi-agent systems: from a multi-layered model to a distributed architecture], Towards an agent-based proxemic model for pedestrian and group dynamic=[Agent-based Proxemic Dynamics: Crowd and Groups Simulation, Exitus: An Agent-Based Evacuation Simulation Model For Heterogeneous Populations, A Cellular Automata Model for Pedestrian and Group Dynamics, Agent-Based Pedestrian Modeling and Simulation, Dealing with crowd crystals in MAS-based crowd simulation: a proposal, An Agent-Based Approach to Pedestrian and Group Dynamics: Experimental and Real World Scenarios], Situated cellular agents and immune system modelling=[A model of multi-agent system based on immune evolution, Supporting the application of Situated Cellular Agents in non-uniform spaces, A Multi-Agent-based 3D Visualization of Stem Cell Behavior], A CA-Based Approach to Self-Organized Adaptive Environments: The Case of an Illumination Facility=[Modeling and programming asynchronous automata networks: The MOCA approach], An Asynchronous Cellular Automata-Based Adaptive Illumination Facility=[Simulation of alternative self-organization models for an adaptive environment, Self-organization models for adaptive environments: Envisioning and evaluation of alternative approaches, Design and Implementation of a Framework for the Interconnection of Cellular Automata in Software and Hardware], etc.. \\\\
+\begin{itemize}
+\item Agent based modeling and simulation: an informatics perspective
+\begin{itemize}
+	\item Modeling \& simulation of educational multi-agent systems in DEVS-suite
+	\item The roundtable: an abstract model of conversation dynamics
+	\item Looking at the effects of performance-based financing through a complex adaptive systems lens
+	\item The Roundtable: An Agent-Based Model of Conversation Dynamics
+	\item Participatory Agent-Based Simulation for Renewable Resource Management: The Role of the Cormas Simulation Platform to Nurture a Community of Practice
+	\item Distributed Agent-Based Social Simulations: An architecture to simulate complex social phenomena on highly parallel computational environments
+	\item Distributed Agent-Based Social Simulations: An Architecture to Simulate Complex Social Phenomena on Highly Parallel Computational Environments
+	\item SimConnector: An approach to testing disaster-alerting systems using agent based simulation models
+	\item IMITATIONAL MODELING OF BEHAVIOR OF LEARNING ECONOMIC AGENTS
+	\item An FPGA implemented cellular automaton crowd evacuation model inspired by the electrostatic-induced potential fields
+	\item Transporte colaborativo marítimo
+\end{itemize}
+\item Coordinated change of state for situated agents
+\begin{itemize}
+	\item Toward a platform for multi-layered multi-agent situated system (MMASS)-based simulations: focusing on field diffusion
+	\item Dynamic interaction spaces and situated multi-agent systems: from a multi-layered model to a distributed architecture
+\end{itemize}
+\item Towards an agent-based proxemic model for pedestrian and group dynamic
+\begin{itemize}
+	\item Towards an agent-based proxemic model for pedestrian and group dynamics: motivations and first experiments
+	\item Agent-based Proxemic Dynamics: Crowd and Groups Simulation
+	\item Exitus: An Agent-Based Evacuation Simulation Model For Heterogeneous Populations
+	\item A Cellular Automata Model for Pedestrian and Group Dynamics
+	\item Agent-Based Pedestrian Modeling and Simulation
+	\item Dealing with crowd crystals in MAS-based crowd simulation: a proposal
+	\item An Agent-Based Approach to Pedestrian and Group Dynamics: Experimental and Real World Scenarios
+\end{itemize}
+\item Situated cellular agents and immune system modelling
+\begin{itemize}
+	\item Toward a platform for multi-layered multi-agent situated system (MMASS)-based simulations: focusing on field diffusion
+	\item A model of multi-agent system based on immune evolution
+	\item Supporting the application of Situated Cellular Agents in non-uniform spaces
+	\item A Multi-Agent-based 3D Visualization of Stem Cell Behavior
+\end{itemize}
+\item A CA-Based Approach to Self-Organized Adaptive Environments: The Case of an Illumination Facility
+\begin{itemize}
+	\item Simulation of alternative self-organization models for an adaptive environment
+	\item Modeling and programming asynchronous automata networks: The MOCA approach
+\end{itemize}
+\item An Asynchronous Cellular Automata-Based Adaptive Illumination Facility
+\begin{itemize}
+	\item A cellular automata-based modular lighting system
+	\item Simulation of alternative self-organization models for an adaptive environment
+	\item Self-organization models for adaptive environments: Envisioning and evaluation of alternative approaches
+	\item Design and Implementation of a Framework for the Interconnection of Cellular Automata in Software and Hardware
+\end{itemize}
+\item etc..
+\end{itemize}
 Ogni citazione viene verificato se esiste o meno ricercandola in DBLP. Nel caso in cui la ricerca No hits, allora la citazione viene eliminata.
 
 \section{Conclusioni}
